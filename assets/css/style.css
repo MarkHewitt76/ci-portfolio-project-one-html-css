@@ -12,3 +12,14 @@ body {
     font-family: 'Tillana', sans-serif;
     color: #fff;
 }
+
+/* header logo */
+
+#header-logo {
+    height: 100px;
+    margin-left: 20px;
+}
+
+#header-logo img {
+    height: 100px;
+}
