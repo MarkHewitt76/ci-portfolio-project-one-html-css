@@ -13,6 +13,16 @@ body {
     color: #fff;
 }
 
+/* main header */
+
+#main-header {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
 /* header logo */
 
 #header-logo {
@@ -23,3 +33,29 @@ body {
 #header-logo img {
     height: 100px;
 }
+
+/* header navigation links */
+
+#main-menu {
+    font-family: 'Skranji', sans-serif;
+    font-size: 1.125rem;
+    margin-right: 20px;
+    padding-top: 38px;
+}
+
+#main-menu li {
+    list-style-type: none;
+    display: inline;
+    text-align: center;
+    padding: 0 10px;
+}
+
+#main-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#main-menu a:hover {
+    color: #8b817f;
+}
+
