@@ -59,3 +59,12 @@ body {
     color: #8b817f;
 }
 
+#homepage-main-content {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#homepage-hero-image {
+    background: url(../images/band_outside_sin_e.jpg) fixed no-repeat center center / cover;
+    height: 100vh;
+}
