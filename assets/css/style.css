@@ -130,3 +130,9 @@ h1, h2, h3 {
     font-weight: 700;
     text-transform: uppercase;
 }
+
+#call-to-action i {
+    padding: 0 9px;
+}
+
+
