@@ -135,4 +135,37 @@ h1, h2, h3 {
     padding: 0 9px;
 }
 
+/* footer */
 
+footer {
+    background-color: #000;
+    height: 100px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 150%;
+    line-height: 3rem;
+    margin: 1% 0;
+    padding: 0 5%;
+    color: #fff;
+}
+
+.social-networks i:hover {
+    color: #8b817f;
+}
+
+#copyright-statement {
+    font-family: 'Skranji', sans-serif;
+    color: inherit;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
