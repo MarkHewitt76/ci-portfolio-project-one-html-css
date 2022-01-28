@@ -81,6 +81,23 @@ The site can be viewed [here](url).
 ### Bugs
 
 #### Fixed Bugs
+- #### Header navigation menu: sizing issue
+
+    I'm not sure if it qualifies as a bug, per se, but I noticed a sizing problem with the header on smaller screens, especially in landscape mode, when I first started to style it for responsive design. It encroached too far down onto the hero image, obscuring it, even after downsizing, but if I made the navigation menu any smaller it became difficult to see. I also wanted to avoid reducing the size of the band logo at all, if possible.
+
+    I realised that I could solve the issue by switching the original, inline-styled navigation menu for a 'hamburger' style drop-down menu on medium to small screen sizes. I achieved this by first wrapping the original #main-menu list in a div with an id of "main-menu-inline". I then created the drop-down menu inside the same `<nav>` element in HTML by using the `<details>` element with a Font Awesome 'hamburger' icon in the `<summary>` tag, and copied the original navigation menu list into the disclosure widget. I gave it an id of "main-menu-dropdown", styled it to look like a standard drop-down menu and set the media queries to switch between the two menu styles at 800 pixels using the property `display: none;`. The media queries can be seen below.
+```css
+    @media screen and (min-width: 801px) {
+        #main-menu-dropdown {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        #main-menu-inline {
+            display: none;
+        }
+    }
+```
 
 #### Unfixed Bugs
 
@@ -115,11 +132,11 @@ The live link can be found [here](url).
 
 ### Content
 
-- The code for the basic structure of the social media links in the footer will come from the Code Institute [Love Running](https://markhewitt76.github.io/love-running/index.html) project.
+- The code for the basic structure of the social media links in the footer came from the Code Institute [Love Running](https://markhewitt76.github.io/love-running/index.html) project.
 
-- The icons in the footer, drop-down menu and other various locations will be taken from [Font Awesome](https://fontawesome.com/).
+- The icons in the footer, drop-down menu and other various locations are taken from [Font Awesome](https://fontawesome.com/).
 
-- The fonts used will be from [Google Fonts](https://fonts.google.com/).
+- The main fonts used are from [Google Fonts](https://fonts.google.com/).
 
 ### Media
 
