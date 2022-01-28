@@ -15,7 +15,6 @@ body {
 
 h1, h2, h3 {
     font-family: 'Skranji', sans-serif;
-    text-align: center;
     line-height: 2rem;
 }
 
@@ -169,6 +168,30 @@ h1, h2, h3 {
 
 #call-to-action i {
     padding: 0 9px;
+}
+
+/* band bio page */
+
+#band-bio-head {
+    margin: 0 auto;
+}
+
+#band-bio-head h2 {
+    line-height: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#band-bio-head p {
+    margin: 0 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#band-bio-head img {
+    width: 100vw;
 }
 
 /* footer */
