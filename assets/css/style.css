@@ -243,6 +243,29 @@ h1, h2, h3 {
     text-align: right;
 }
 
+/* afterword */
+
+#band-bio-afterword {
+    margin: 10px 20px;
+}
+
+#band-bio-afterword p:nth-of-type(6) {
+    padding: 30px 0 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#band-bio-afterword div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#band-bio-afterword div h3 {
+    font-weight: 400;
+    text-decoration: none;
+}
+
 
 
 /* general band page styling */
@@ -256,7 +279,6 @@ h1, h2, h3 {
     line-height: 2rem;
     font-weight: 400;
     text-align: center;
-    /* text-transform: uppercase; */
 }
 
 /* band page main body images */
