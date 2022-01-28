@@ -207,37 +207,41 @@ h1, h2, h3 {
     width: 100vw;
 }
 
-/* foreword */
+/* general band page styling */
 
-#band-bio-foreword {
+.band-bio-body {
     margin: 10px 20px;
 }
 
-#band-bio-foreword div {
+.band-bio-body p {
+    padding: 10px 0;
+    font-size: 1.125rem;
+}
+
+.band-bio-body div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.band-bio-body h3 {
+    padding-top: 10px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* band page main body images */
+
+.bio-image {
+    width: 33%;
+    margin: 10px;
+    border-radius: 20px;
 }
 
 /* band members */
 
-#band-members {
-    margin: 10px 20px;
-}
-
-#band-members div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 #band-members img {
     border-radius: 50%;
-}
-
-#paul-bio div, #moe-bio div {
-    flex-direction: row-reverse;
-    text-align: right;
 }
 
 /* afterword */
@@ -263,28 +267,6 @@ h1, h2, h3 {
     font-weight: 400;
     text-decoration: none;
 }
-
-/* general band page styling */
-
-.band-bio-body p {
-    padding: 10px 0;
-    font-size: 1.125rem;
-}
-
-.band-bio-body h3 {
-    padding-top: 10px;
-    font-weight: 400;
-    text-align: center;
-}
-
-/* band page main body images */
-
-.bio-image {
-    width: 33%;
-    margin: 10px;
-    border-radius: 20px;
-}
-
 
 
 
@@ -328,7 +310,7 @@ footer {
 
 /* media queries */
 
-/* for medium-sized screens, up to 800 pixels wide */
+/* for larger screens, wider than 800 pixels */
 
 @media screen and (min-width: 801px) {
 
@@ -338,23 +320,65 @@ footer {
     
 }
 
+/* for medium-sized screens, up to 800 pixels wide */
+
 @media screen and (max-width: 800px) {
-    
+
+    /* header nav */
     #main-menu-inline {
         display: none;
     }
 
+    /* band page */
+
+    #band-bio-foreword div {
+        flex-direction: column;
+    }
+
+    #band-bio-foreword img {
+        width: 100%;
+    }
+
+}
+
+/* for medium to smaller screens, wider than 600 pixels */
+
+@media screen and (min-width: 601px) {
+
+    /* band page */
+    #paul-bio, #moe-bio {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+    
 }
 
 /* for smaller screens, 600 pixels wide or less */
 
 @media screen and (max-width: 600px) {
 
+    /* header nav */
     #main-menu {
         font-size: 0.875rem;
     }
-    
+
+    /* footer */
     .social-networks i {
         font-size: 87.5%;
+    }
+
+    /* band page */
+
+    .band-bio-body div {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .band-bio-body img {
+        width: 100%;
+    }
+
+    .band-bio-body p, #band-bio-afterword {
+        font-size: 0.875rem;
     }
 }
