@@ -55,9 +55,6 @@ h1, h2, h3 {
 
 #main-menu li {
     list-style-type: none;
-    display: inline;
-    text-align: center;
-    padding: 0 10px;
 }
 
 #main-menu a {
@@ -68,6 +65,37 @@ h1, h2, h3 {
 #main-menu a:hover {
     color: #8b817f;
 }
+
+/* navigation menu for larger screen widths */
+
+#main-menu-inline li {
+    display: inline;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* drop-down navigation menu for smaller screen widths */
+
+#main-menu-dropdown summary {
+    list-style-type: none;
+    text-align: right;
+}
+
+#main-menu-dropdown summary:hover {
+    color: #8b817f;
+    cursor: pointer;
+}
+
+#main-menu-dropdown[open] summary {
+    color: #8b817f;
+}
+
+#main-menu-dropdown li {
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* active links */
 
 .active-link {
     text-transform: uppercase;
