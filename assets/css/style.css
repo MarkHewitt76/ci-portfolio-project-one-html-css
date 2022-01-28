@@ -8,6 +8,7 @@
 }
 
 body {
+    background: url(../images/u_symbol_dark_grey.png) fixed no-repeat center center / contain;
     background-color: #000;
     font-family: 'Tillana', sans-serif;
     color: #fff;
@@ -23,13 +24,9 @@ h1, h2, h3 {
 #main-header {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
-
+    position: fixed;
     display: flex;
     justify-content: space-between;
-}
-
-.fixed-header {
-    position: fixed;
 }
 
 /* header logo */
@@ -189,24 +186,24 @@ h1, h2, h3 {
 /* heading */
 
 #band-bio-head {
-    margin: 0 auto;
+    margin: 120px auto 20px;
 }
 
 #band-bio-head h2 {
-    line-height: 2rem;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
 }
 
 #band-bio-head p {
-    margin: 0 20px;
+    padding: 0 20px;
     font-size: 0.75rem;
     font-weight: 700;
     text-align: center;
 }
 
 #band-bio-head img {
+    margin-top: 20px;
     width: 100vw;
 }
 
@@ -247,6 +244,7 @@ h1, h2, h3 {
 
 #band-bio-afterword {
     margin: 10px 20px;
+    font-size: 1.125rem;
 }
 
 #band-bio-afterword p:nth-of-type(6) {
@@ -266,17 +264,15 @@ h1, h2, h3 {
     text-decoration: none;
 }
 
-
-
 /* general band page styling */
 
 .band-bio-body p {
     padding: 10px 0;
+    font-size: 1.125rem;
 }
 
 .band-bio-body h3 {
     padding-top: 10px;
-    line-height: 2rem;
     font-weight: 400;
     text-align: center;
 }
@@ -288,7 +284,6 @@ h1, h2, h3 {
     margin: 10px;
     border-radius: 20px;
 }
-
 
 
 
