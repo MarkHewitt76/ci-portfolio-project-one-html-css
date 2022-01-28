@@ -172,6 +172,22 @@ h1, h2, h3 {
 
 /* band bio page */
 
+#band-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#band-bio a {
+    color: #fff;
+}
+
+#band-bio a:hover {
+    color: #8b817f;
+}
+
+/* heading */
+
 #band-bio-head {
     margin: 0 auto;
 }
@@ -193,6 +209,36 @@ h1, h2, h3 {
 #band-bio-head img {
     width: 100vw;
 }
+
+/* general band page styling */
+
+.band-bio-body p {
+    padding: 10px 0;
+}
+
+/* band page main body images */
+
+.bio-image {
+    width: 33%;
+    margin: 10px;
+}
+
+
+/* foreword */
+
+#band-bio-foreword {
+    margin: 10px 20px;
+}
+
+#band-bio-foreword div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
 
 /* footer */
 
