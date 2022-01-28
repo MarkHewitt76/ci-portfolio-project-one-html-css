@@ -210,30 +210,33 @@ footer {
 
 /* media queries */
 
-/* for medium-sized screens, 800 pixels wide or less */
+/* for medium-sized screens, up to 800 pixels wide */
+
+@media screen and (min-width: 801px) {
+
+    #main-menu-dropdown {
+        display: none;
+    }
+    
+}
 
 @media screen and (max-width: 800px) {
-
-    #main-header {
-        flex-direction: column;
-    }
-
-    #main-menu {
-        padding: 0 0 10px 0;
-        text-align: right;
+    
+    #main-menu-inline {
+        display: none;
     }
 
 }
 
-/* for smaller screens, 650 pixels wide or less */
+/* for smaller screens, 600 pixels wide or less */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
 
     #main-menu {
         font-size: 0.875rem;
     }
-
+    
     .social-networks i {
-        font-size: 95%;
+        font-size: 87.5%;
     }
 }
