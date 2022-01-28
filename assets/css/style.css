@@ -19,6 +19,13 @@ h1, h2, h3 {
     line-height: 2rem;
 }
 
+hr {
+    border-top: 1px solid #8b817f;
+    width: 66%;
+    margin: 10px auto 0;
+    
+}
+
 /* main header */
 
 #main-header {
@@ -346,6 +353,11 @@ footer {
 @media screen and (min-width: 601px) {
 
     /* band page */
+
+    #band-members hr {
+        display: none;
+    }
+
     #paul-bio, #moe-bio {
         flex-direction: row-reverse;
         text-align: right;
