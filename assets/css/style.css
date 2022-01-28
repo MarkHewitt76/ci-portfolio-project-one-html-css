@@ -194,7 +194,7 @@ footer {
         padding: 0 0 10px 0;
         text-align: right;
     }
-    
+
 }
 
 /* for smaller screens, 650 pixels wide or less */
@@ -204,7 +204,7 @@ footer {
     #main-menu {
         font-size: 0.875rem;
     }
-    
+
     .social-networks i {
         font-size: 95%;
     }
