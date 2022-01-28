@@ -11,7 +11,7 @@
 </head>
 <body>
     
-    <header id="main-header" class="fixed-header">
+    <header id="main-header">
         
         <div id="header-logo">
             <a href="index.html">
@@ -25,10 +25,10 @@
             <div id="main-menu-inline">
                 <ul>
                     <li>
-                        <a href="index.html" class="active-link">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="band.html">Band</a>
+                        <a href="band.html" class="active-link">Band</a>
                     </li>
                     <li>
                         <a href="#">Music & Videos</a>
@@ -50,10 +50,10 @@
                 <summary><i class="fas fa-bars"></i> Menu</summary>
                     <ul>
                         <li>
-                            <a href="index.html" class="active-link">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="band.html">Band</a>
+                            <a href="band.html" class="active-link">Band</a>
                         </li>
                         <li>
                             <a href="#">Music & Videos</a>
@@ -74,23 +74,43 @@
         
     </header>
 
-    <main id="homepage-main-content">
+    <main id="band-bio">
+        
+        <section id="band-bio-head">
+            Heading & Hero image
+        </section>
 
-        <div id="homepage-hero-image" role="img" aria-label="Full-screen image of the band outside Sin-E in Dublin">
-            <div id="call-to-action">
-                <a href="#">
-                    <img src="assets/images/fossils_cover.jpg" alt="Fossils album art">
-                    <div>
-                        <p>Album <span>Fossils</span></p>
-                        <p>available now!</p>
-                        <i class="far fa-play-circle"></i>
-                        <i class="fab fa-soundcloud"></i>
-                        <i class="fab fa-spotify"></i>
-                        <i class="fas fa-cart-arrow-down"></i>
-                    </div>
-                </a>
+        <section id="band-bio-foreword">
+            Bio Foreword
+        </section>
+
+        <section id="band-members">
+            <div id="paul-bio">
+                <div id="paul-bio-text">
+                    <h3>Paul DOC</h3>
+                    <p>Paul text</p>
+                </div>
+                Paul image: class="bio-image"
             </div>
-        </div>
+            <div id="chris-bio">
+                <div id="chris-bio-text">
+                    <h3>Christopher Goggins</h3>
+                    <p>Chris text</p>
+                </div>
+                Chris image: class="bio-image"
+            </div>
+            <div id="moe-bio">
+                <div id="moe-bio-text">
+                    <h3>Moe Curtin</h3>
+                    <p>Moe text</p>
+                </div>
+                Moe image: class="bio-image"
+            </div>
+        </section>
+        
+        <section id="band-bio-afterword">
+            Bio Afterword
+        </section>
 
     </main>
 
