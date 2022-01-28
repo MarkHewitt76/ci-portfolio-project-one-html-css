@@ -210,20 +210,6 @@ h1, h2, h3 {
     width: 100vw;
 }
 
-/* general band page styling */
-
-.band-bio-body p {
-    padding: 10px 0;
-}
-
-/* band page main body images */
-
-.bio-image {
-    width: 33%;
-    margin: 10px;
-}
-
-
 /* foreword */
 
 #band-bio-foreword {
@@ -233,6 +219,52 @@ h1, h2, h3 {
 #band-bio-foreword div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+/* band members */
+
+#band-members {
+    margin: 10px 20px;
+}
+
+#band-members div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#band-members img {
+    border-radius: 50%;
+}
+
+#paul-bio div, #moe-bio div {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+
+
+/* general band page styling */
+
+.band-bio-body p {
+    padding: 10px 0;
+}
+
+.band-bio-body h3 {
+    padding-top: 10px;
+    line-height: 2rem;
+    font-weight: 400;
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+
+/* band page main body images */
+
+.bio-image {
+    width: 33%;
+    margin: 10px;
+    border-radius: 20px;
 }
 
 
