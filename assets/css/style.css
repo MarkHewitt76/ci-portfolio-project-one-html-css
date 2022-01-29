@@ -373,18 +373,14 @@ footer {
 }
 
 .social-networks {
-    text-align: center;
-}
-
-.social-networks > li {
-    display: inline;
+    line-height: 3rem;
+    font-size: 0.875rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .social-networks i {
-    font-size: 150%;
-    line-height: 3rem;
-    margin: 1% 0;
-    padding: 0 5%;
     color: #fff;
 }
 
@@ -395,7 +391,7 @@ footer {
 #copyright-statement {
     font-family: 'Skranji', sans-serif;
     color: inherit;
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     line-height: 1.5rem;
     text-align: center;
 }
@@ -459,11 +455,6 @@ footer {
     /* header nav */
     #main-menu {
         font-size: 0.875rem;
-    }
-
-    /* footer */
-    .social-networks i {
-        font-size: 87.5%;
     }
 
     /* band page */
