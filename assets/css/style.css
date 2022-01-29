@@ -347,10 +347,11 @@ hr {
 
 #fossils summary, #fossils ul {
     list-style-type: none;
+    text-align: center;
 }
 
-#fossils-stream ul {
-    border-bottom: 1px solid #8b817f;
+#fossils-stream h3 {
+    text-align: center;
 }
 
 #fossils-stream li {
@@ -359,7 +360,17 @@ hr {
     text-transform: uppercase;
 }
 
+#fossils-listen {
+    text-align: center;
+    text-transform: uppercase;
+}
 
+#fossils-listen audio {
+    display: block;
+    height: 20px;
+    width: 260px;
+    background-color: #fff;
+}
 
 
 
