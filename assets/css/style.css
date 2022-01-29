@@ -297,6 +297,7 @@ hr {
 #music h1, #music h2, #music h3 {
     font-weight: 400;
     text-transform: uppercase;
+    text-align: center;
 }
 
 #music a {
@@ -322,17 +323,26 @@ hr {
     height: 40px;
 }
 
-/* 'Fossils' album */
+/* albums */
 
-#fossils {
+#albums {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#albums section {
     margin: 10px 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
-#fossils img {
+#albums hr {
+    width: 260px;
+}
+
+#fossils img, #fossils audio, #too-late img, #too-late iframe {
     width: 260px;
 }
 
@@ -350,17 +360,14 @@ hr {
     text-align: center;
 }
 
-#fossils-stream h3 {
-    text-align: center;
-}
-
 #fossils-stream li {
     font-weight: 700;
     text-align: left;
     text-transform: uppercase;
 }
 
-#fossils-listen {
+#fossils-listen, #too-late p {
+    margin-top: 20px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -368,8 +375,12 @@ hr {
 #fossils-listen audio {
     display: block;
     height: 20px;
-    width: 260px;
+    /* width: 260px; */
     background-color: #fff;
+}
+
+#too-late h2 {
+    font-size: 1.25rem;
 }
 
 
@@ -415,7 +426,13 @@ footer {
 
 @media screen and (min-width: 801px) {
 
+    /* header nav */
     #main-menu-dropdown {
+        display: none;
+    }
+
+    /* music page */
+    #albums hr {
         display: none;
     }
     
@@ -438,6 +455,11 @@ footer {
 
     #band-bio-foreword img {
         width: 100%;
+    }
+
+    /* music page */
+    #albums {
+        flex-direction: column;
     }
 
 }
