@@ -8,8 +8,7 @@
 }
 
 body {
-    background: url(../images/u_symbol_dark_grey.png) fixed no-repeat center center / contain;
-    background-color: #000;
+    background: #000 url(../images/u_symbol_dark_grey.png) fixed no-repeat center center / contain;
     font-family: 'Tillana', sans-serif;
     color: #fff;
 }
@@ -79,6 +78,11 @@ hr {
 
 /* drop-down navigation menu for smaller screen widths */
 
+#main-menu-dropdown {
+    position: absolute;
+    right: 20px;
+}
+
 #main-menu-dropdown summary {
     list-style-type: none;
     text-align: right;
@@ -90,12 +94,18 @@ hr {
 }
 
 #main-menu-dropdown[open] summary {
-    color: #8b817f;
+    text-transform: uppercase;
+}
+
+#main-menu-dropdown ul {
+    background-color: #101010;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 #main-menu-dropdown li {
+    padding-top: 5px;
     text-align: center;
-    padding: 5px 0;
 }
 
 /* active links */
@@ -126,7 +136,7 @@ hr {
     background-color: rgba(0, 0, 0, 0.7);
     height: 100px;
     width: 300px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 10px;
 
     display: flex;
@@ -274,6 +284,9 @@ hr {
     font-weight: 400;
     text-decoration: none;
 }
+
+/* music page */
+
 
 
 
