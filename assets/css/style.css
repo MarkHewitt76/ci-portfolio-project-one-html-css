@@ -412,12 +412,12 @@ iframe {
     align-items: center;
 }
 
-#music-video {
+#music-video, #home-video {
     display: flex;
     flex-direction: column;
 }
 
-#music-video-text a {
+#music-video-text a, #home-video-text a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
@@ -517,8 +517,8 @@ footer {
         width: 100%;
     }
 
-    /* music page */
-    #albums {
+    /* music & video pages */
+    #albums, .video-box {
         flex-direction: column;
     }
 
@@ -566,11 +566,21 @@ footer {
     }
 
     /* media pages */
-    .media-page-heading h1 {
+    .media-page-heading h1, .page-divider-heading h1  {
         font-size: 1.75rem;
     }
 
     .general-main-body h2 {
         font-size: 1.25rem;
+    }
+
+    /* video page */
+    
+    #video p {
+        font-size: 0.875rem;
+    }
+
+    #music-video-text a, #home-video-text a {
+        font-size: 1rem;
     }
 }
