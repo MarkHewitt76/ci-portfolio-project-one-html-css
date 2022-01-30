@@ -13,6 +13,15 @@ body {
     color: #fff;
 }
 
+body a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: #8b817f;
+}
+
 h1, h2, h3 {
     font-family: 'Skranji', sans-serif;
     line-height: 2rem;
@@ -57,15 +66,6 @@ hr {
 
 #main-menu li {
     list-style-type: none;
-}
-
-#main-menu a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#main-menu a:hover {
-    color: #8b817f;
 }
 
 /* navigation menu for larger screen widths */
@@ -145,15 +145,6 @@ hr {
     
 }
 
-#call-to-action a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#call-to-action a:hover {
-    color: #8b817f;
-}
-
 #call-to-action img {
     height: 100px;
     width: 100px;
@@ -190,14 +181,11 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 #band-bio a {
-    color: #fff;
-}
-
-#band-bio a:hover {
-    color: #8b817f;
+    text-decoration: underline;
 }
 
 /* heading */
@@ -228,6 +216,7 @@ hr {
 
 .band-bio-body {
     margin: 10px 20px;
+    max-width: 950px;
 }
 
 .band-bio-body p {
@@ -265,6 +254,7 @@ hr {
 
 #band-bio-afterword {
     margin: 10px 20px;
+    max-width: 950px;
     font-size: 1.125rem;
 }
 
@@ -285,33 +275,23 @@ hr {
     text-decoration: none;
 }
 
-/* music page */
+/* general styles for following pages - applies to music, video, (news and contact?) pages */
 
-#music {
+.general-main-body {
     margin: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#music h1, #music h2, #music h3 {
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
+iframe {
+    margin: 10px 0;
+    border-radius: 5px;
 }
 
-#music a {
-    color: #fff;
-    text-decoration: none;
-}
+/* music and video page headings */
 
-#music a:hover {
-    color: #8b817f;
-}
-
-/* heading */
-
-#music-heading {
+.media-page-heading {
     margin: 120px 0 10px;
     width: 100%;
     display: flex;
@@ -319,8 +299,16 @@ hr {
     justify-content: space-evenly;
 }
 
-#music-heading img {
-    height: 40px;
+.media-page-heading img {
+    height: 30px;
+}
+
+/* music page */
+
+#music h1, #music h2, #music h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /* albums */
@@ -334,7 +322,6 @@ hr {
     margin: 10px 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
 }
 
@@ -342,7 +329,7 @@ hr {
     width: 260px;
 }
 
-#fossils img, #fossils audio, #too-late img, #too-late iframe {
+#fossils img, #fossils audio, #too-late img {
     width: 260px;
 }
 
@@ -375,13 +362,9 @@ hr {
 #fossils-listen audio {
     display: block;
     height: 20px;
-    /* width: 260px; */
     background-color: #fff;
 }
 
-#too-late h2 {
-    font-size: 1.25rem;
-}
 
 
 
@@ -487,7 +470,7 @@ footer {
 
     /* header nav */
     #main-menu {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 
     /* band page */
@@ -503,5 +486,14 @@ footer {
 
     .band-bio-body p, #band-bio-afterword {
         font-size: 0.875rem;
+    }
+
+    /* media pages */
+    .media-page-heading h1 {
+        font-size: 1.75rem;
+    }
+
+    .general-main-body h2 {
+        font-size: 1.25rem;
     }
 }

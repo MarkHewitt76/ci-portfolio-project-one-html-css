@@ -98,6 +98,8 @@ The site can be viewed [here](url).
         }
     }
 ```
+- #### Forced to reset after 6 commits as large video file prevented push
+
 
 #### Unfixed Bugs
 
