@@ -40,6 +40,7 @@ hr {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     position: fixed;
+
     display: flex;
     justify-content: space-between;
 }
@@ -266,6 +267,7 @@ hr {
 
 #band-bio-afterword div {
     width: 100%;
+    
     display: flex;
     justify-content: space-evenly;
 }
@@ -279,9 +281,23 @@ hr {
 
 .general-main-body {
     margin: 0 20px;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.page-divider-heading {
+    margin: 30px 0 10px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.page-divider-heading img {
+    height: 30px;
 }
 
 iframe {
@@ -294,6 +310,7 @@ iframe {
 .media-page-heading {
     margin: 120px 0 10px;
     width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -320,6 +337,7 @@ iframe {
 
 #albums section {
     margin: 10px 0;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -381,6 +399,7 @@ footer {
     line-height: 3rem;
     font-size: 0.875rem;
     list-style-type: none;
+
     display: flex;
     justify-content: space-evenly;
 }
