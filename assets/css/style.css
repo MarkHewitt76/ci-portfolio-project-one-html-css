@@ -301,6 +301,7 @@ hr {
 }
 
 iframe {
+    width: 300px;
     margin: 10px 0;
     border-radius: 5px;
 }
@@ -383,7 +384,64 @@ iframe {
     background-color: #fff;
 }
 
+/* video page */
 
+#video h1, #video h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#video hr {
+    margin-bottom: 20px;
+}
+
+#video h2, #video p {
+    
+    text-align: center;
+}
+
+#video p {
+    font-size: 1.125rem;
+}
+
+.video-box {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#music-video {
+    display: flex;
+    flex-direction: column;
+}
+
+#music-video-text a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#interview-video-text a {
+    text-decoration: underline;
+}
+
+/* this solution to making an embedded YouTube video responsive while maintaining its aspect ratio was to be found all over after a single google search, but this specific code came from https://css-tricks.com/fluid-width-video */
+
+.iframe-box {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+}
+
+.iframe-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 
