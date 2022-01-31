@@ -24,7 +24,6 @@ body a:hover {
 
 h1, h2, h3 {
     font-family: 'Skranji', sans-serif;
-    line-height: 2rem;
 }
 
 hr {
@@ -211,6 +210,7 @@ hr {
 #band-bio-head img {
     margin-top: 20px;
     width: 100vw;
+    max-width: 1280px;
 }
 
 /* general band page styling */
@@ -287,6 +287,19 @@ hr {
     justify-content: space-between;
 }
 
+.media-page-heading {
+    margin: 120px 0 10px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.media-page-heading img {
+    height: 30px;
+}
+
 .page-divider-heading {
     margin: 50px 0 10px;
     width: 100%;
@@ -304,21 +317,6 @@ iframe {
     width: 300px;
     margin: 10px 0;
     border-radius: 5px;
-}
-
-/* music and video page headings */
-
-.media-page-heading {
-    margin: 120px 0 10px;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.media-page-heading img {
-    height: 30px;
 }
 
 /* music page */
@@ -441,6 +439,24 @@ iframe {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/* news & events page */
+
+#news-events h1, #news-events h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#news-events h3 {
+    font-weight: 400;
+}
+
+#news-header-image {
+    margin-top: 20px;
+    width: 100vw;
+    max-width: 950px;
+    align-self: center;
 }
 
 
