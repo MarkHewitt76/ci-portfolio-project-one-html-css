@@ -417,7 +417,6 @@ iframe {
 
 #music-video-text a, #home-video-text a {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.25rem;
     font-weight: 500;
 }
 
@@ -425,7 +424,7 @@ iframe {
     text-decoration: underline;
 }
 
-/* this solution to making an embedded YouTube video responsive while maintaining its aspect ratio was to be found all over after a single google search, but this specific code came from https://css-tricks.com/fluid-width-video */
+/* This solution to making an embedded YouTube video responsive while maintaining its aspect ratio was to be found all over after a single google search, but this specific code came from https://css-tricks.com/fluid-width-video */
 
 .iframe-box {
     position: relative;
@@ -468,7 +467,7 @@ iframe {
 
 .news-item {
     margin: 20px 0;
-    border-bottom: 1px solid #8b817f;
+    border-top: 1px solid #8b817f;
 }
 
 .news-item-heading {
@@ -484,12 +483,16 @@ iframe {
     flex-grow: 1;
 }
 
-.news-item-heading span {
+/* This code for creating a frameset-type effect came from the CSS Tricks website, posted by Chris Coyier on Jul 9, 2011 & updated on Apr 28, 2020.
+https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
+
+.date-frameset {
     position: absolute;
     top: 0;
-    /* font-size: 0.875rem; */
     line-height: 1;
-    margin: -0.5em 0 0;
+    background-color: #000;
+    margin: -0.5em 0 0 10px;
+    padding: 0 3px;
 }
 
 .news-item-main {
@@ -498,7 +501,6 @@ iframe {
 
 .news-item-main summary {
     list-style-type: none;
-    font-size: 0.8rem;
     text-align: right;
     text-decoration: underline;
 }
@@ -510,6 +512,10 @@ iframe {
 .news-item-main summary:hover {
     color: #8b817f;
     cursor: pointer;
+}
+
+.news-item-main article {
+    font-size: 1.125rem;
 }
 
 .news-item-main section {
@@ -529,7 +535,6 @@ iframe {
 
 .news-item-link a {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.25rem;
     font-weight: 500;
 }
 
@@ -613,8 +618,7 @@ footer {
         flex-direction: column;
     }
 
-
-
+    /* news-events page */
     .news-item-main section {
         flex-direction: column;
     }
@@ -659,7 +663,7 @@ footer {
     }
 
     .band-bio-body p, #band-bio-afterword {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 
     /* media pages */
@@ -671,13 +675,10 @@ footer {
         font-size: 1.25rem;
     }
 
-    /* video page */
+    /* video & news-events pages */
     
-    #video p {
-        font-size: 0.875rem;
-    }
-
-    #music-video-text a, #home-video-text a {
+    #video p, .news-item article {
         font-size: 1rem;
     }
+
 }
