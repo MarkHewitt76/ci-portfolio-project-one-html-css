@@ -39,6 +39,7 @@ hr {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     position: fixed;
+    z-index: 1;
 
     display: flex;
     justify-content: space-between;
@@ -301,7 +302,7 @@ hr {
 }
 
 .page-divider-heading {
-    margin: 50px 0 10px;
+    margin: 70px 0 10px;
     width: 100%;
     
     display: flex;
@@ -451,6 +452,8 @@ iframe {
     font-weight: 400;
 }
 
+/* news section */
+
 #news-header-image {
     margin-top: 20px;
     width: 100vw;
@@ -467,11 +470,13 @@ iframe {
 
 .news-item {
     margin: 20px 0;
-    border-top: 1px solid #8b817f;
+    /* border-top: 1px solid #8b817f; */
 }
 
 .news-item-heading {
     position: relative;
+    border-top: 1px solid #8b817f;
+    padding-top: 5px;
 
     display: flex;
     align-items: flex-end;
@@ -522,10 +527,24 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: justify;
+}
+
+/* .news-item-main section a {
+    text-decoration: underline;
+} */
+
+.news-item-main span {
+    font-family: 'Skranji', sans-serif;
+    font-weight: 400;
 }
 
 .news-item-main img {
     width: 200px;
+    margin: 10px;
+}
+
+.news-item-main iframe {
     margin: 10px;
 }
 
@@ -537,6 +556,33 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
+
+#too-late-news section {
+    flex-direction: column;
+    align-items: center;
+}
+
+#too-late-news section p:last-of-type {
+    text-align: center;
+}
+
+#too-late-news  ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#too-late-news figure {
+    width: 220px;
+}
+
+#too-late-news figcaption {
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    margin-top: 0;
+}
+
+
 
 
 
