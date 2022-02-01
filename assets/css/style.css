@@ -452,28 +452,25 @@ iframe {
     font-weight: 400;
 }
 
-/* news section */
-
-#news-header-image {
+#news-header-image, #gigs-header-image {
     margin-top: 20px;
     width: 100vw;
     max-width: 1280px;
     align-self: center;
 }
 
-#news {
+#news, #gigs {
     margin: 10px 20px;
     width: 100%;
     max-width: 950px;
     align-self: center;
 }
 
-.news-item {
+.news-item, .gig-listing {
     margin: 20px 0;
-    /* border-top: 1px solid #8b817f; */
 }
 
-.news-item-heading {
+.news-item-heading, .gig-listing-heading {
     position: relative;
     border-top: 1px solid #8b817f;
     padding-top: 5px;
@@ -482,7 +479,7 @@ iframe {
     align-items: flex-end;
 }
 
-.news-item-heading h3 {
+.news-item-heading h3, .gig-listing-heading h3 {
     margin: 10px 10px 0;
     text-align: center;
     flex-grow: 1;
@@ -500,46 +497,42 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
     padding: 0 3px;
 }
 
-.news-item-main {
+.news-item-main, .gig-listing-main {
     width: 100%;
 }
 
-.news-item-main summary {
+.news-item-main summary, .gig-listing-main summary {
     list-style-type: none;
     text-align: right;
     text-decoration: underline;
 }
 
-.news-item-main[open] summary {
+.news-item-main[open] summary, .gig-listing-main[open] summary {
     color: #8b817f;
 }
 
-.news-item-main summary:hover {
+.news-item-main summary:hover, .gig-listing-main summary:hover {
     color: #8b817f;
     cursor: pointer;
 }
 
-.news-item-main article {
+.news-item-main article, .gig-listing-main section, .gig-link {
     font-size: 1.125rem;
 }
 
-.news-item-main section {
+.news-item-main section, .gig-listing-main section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: justify;
 }
 
-/* .news-item-main section a {
-    text-decoration: underline;
-} */
-
 .news-item-main span {
     font-family: 'Skranji', sans-serif;
     font-weight: 400;
 }
 
-.news-item-main img {
+.news-item-main img, .gig-listing-main img {
     width: 200px;
     margin: 10px;
 }
@@ -548,11 +541,11 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
     margin: 10px;
 }
 
-.news-item-link {
+.news-item-link, .gig-link {
     text-align: center;   
 }
 
-.news-item-link a {
+.news-item-link a, .gig-link a {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
@@ -566,7 +559,7 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
     text-align: center;
 }
 
-#too-late-news  ul {
+#too-late-news ul {
     list-style-type: none;
     text-align: center;
 }
@@ -665,7 +658,7 @@ footer {
     }
 
     /* news-events page */
-    .news-item-main section {
+    .news-item-main section, .gig-listing-main section {
         flex-direction: column;
     }
 
@@ -723,7 +716,7 @@ footer {
 
     /* video & news-events pages */
     
-    #video p, .news-item article {
+    #video p, .news-item article, .gig-listing-main section, .gig-link {
         font-size: 1rem;
     }
 
