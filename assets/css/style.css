@@ -455,9 +455,84 @@ iframe {
 #news-header-image {
     margin-top: 20px;
     width: 100vw;
+    max-width: 1280px;
+    align-self: center;
+}
+
+#news {
+    margin: 10px 20px;
+    width: 100%;
     max-width: 950px;
     align-self: center;
 }
+
+.news-item {
+    margin: 20px 0;
+    border-bottom: 1px solid #8b817f;
+}
+
+.news-item-heading {
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.news-item-heading h3 {
+    margin: 10px 10px 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.news-item-heading span {
+    position: absolute;
+    top: 0;
+    /* font-size: 0.875rem; */
+    line-height: 1;
+    margin: -0.5em 0 0;
+}
+
+.news-item-main {
+    width: 100%;
+}
+
+.news-item-main summary {
+    list-style-type: none;
+    font-size: 0.8rem;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.news-item-main[open] summary {
+    color: #8b817f;
+}
+
+.news-item-main summary:hover {
+    color: #8b817f;
+    cursor: pointer;
+}
+
+.news-item-main section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-item-main img {
+    width: 200px;
+    margin: 10px;
+}
+
+.news-item-link {
+    text-align: center;   
+}
+
+.news-item-link a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
 
 
 
@@ -535,6 +610,12 @@ footer {
 
     /* music & video pages */
     #albums, .video-box {
+        flex-direction: column;
+    }
+
+
+
+    .news-item-main section {
         flex-direction: column;
     }
 
