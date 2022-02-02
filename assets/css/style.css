@@ -295,6 +295,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 .media-page-heading img {
@@ -308,6 +309,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 .page-divider-heading img {
@@ -443,6 +445,10 @@ iframe {
 
 /* news & events page */
 
+#news-events {
+    align-items: center;
+}
+
 #news-events h1, #news-events h2 {
     font-weight: 400;
     text-transform: uppercase;
@@ -453,7 +459,7 @@ iframe {
 }
 
 #news-events > h3 {
-    text-align: center;
+    /* text-align: center; */
     text-decoration: underline;
     margin-bottom: 40px;
 }
@@ -603,6 +609,23 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
 .gig-listing-main img {
     width: 300px;
     margin: 10px;
+}
+
+
+
+/* contact page */
+
+#contact {
+    align-items: center;
+}
+
+#signup {
+    margin-top: 120px;
+    max-width: 1280px;
+}
+
+#contact-info {
+    max-width: 950px;
 }
 
 
