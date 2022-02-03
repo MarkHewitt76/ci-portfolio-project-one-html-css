@@ -460,7 +460,6 @@ iframe {
 }
 
 #news-events > h3 {
-    /* text-align: center; */
     text-decoration: underline;
     margin-bottom: 40px;
 }
@@ -612,8 +611,6 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
     margin: 10px;
 }
 
-
-
 /* contact page */
 
 #contact h1 {
@@ -627,6 +624,8 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
     justify-content: space-evenly;
 }
 
+/* signup form */
+
 #signup {
     background: url(../images/moe_sil_bg_1.jpg) no-repeat center center / cover;
     height: 600px;
@@ -638,6 +637,7 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
 }
 
 #signup h2 {
+    margin: 5px;
     text-align: center;
 }
 
@@ -708,6 +708,8 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
     transition: all 0.25s ;
 }
 
+/* contact information */
+
 #contact-info {
     max-width: 400px;
 }
@@ -717,8 +719,42 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
 
 
 
+/* dummy page for signup form */
 
+#dummy {
+    margin: 0 20px;
+    align-items: center;
+}
 
+#u-dummy {
+    margin: 150px 0 5px;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#u-dummy img {
+    height: 22px;
+    margin-left: 15px;
+}
+
+#dummy h2, #dummy h3 {
+    margin-bottom: 20px;
+}
+
+#dummy audio {
+    height: 20px;
+    width: 300px;
+}
+
+#dummy-logo {
+    width: 100px;
+    margin: 40px 0 20px;
+}
+
+#dummy h3:last-of-type {
+    margin-bottom: 100px;
+    text-decoration: underline;
+}
 
 /* footer */
 
