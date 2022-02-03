@@ -618,8 +618,8 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
 }
 
 #contact-box {
-    margin-top: 20px;
-
+    margin: 20px 0 40px;
+    
     display: flex;
     justify-content: space-evenly;
 }
@@ -629,6 +629,7 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
 #signup {
     background: url(../images/moe_sil_bg_1.jpg) no-repeat center center / cover;
     height: 600px;
+    width: 350px;
     border-radius: 5px;
 
     display: flex;
@@ -642,9 +643,9 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
 }
 
 .signup-form {
-    background-color: rgba(0, 0, 0, 0.7);
-    max-width: 300px;
-    margin: 0 5px 5px 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 275px;
+    margin: 0 auto 10px;
     padding: 10px;
     border-radius: 5px;
 }
@@ -710,14 +711,29 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
 
 /* contact information */
 
-#contact-info {
-    max-width: 400px;
+#management, #contact-info {
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+#management img {
+    width: 300px;
+}
 
+.social-media-link a {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.email-link span {
+    font-family: 'Skranji', sans-serif;
+}
 
-
+#contact-info img {
+    width: 100px;
+}
 
 /* dummy page for signup form */
 
@@ -748,7 +764,7 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
 
 #dummy-logo {
     width: 100px;
-    margin: 40px 0 20px;
+    margin: 20px 0;
 }
 
 #dummy h3:last-of-type {
@@ -840,6 +856,17 @@ footer {
 
     .news-item-main img, .news-item-main iframe {
         margin: 10px;
+    }
+
+    /* contact page */
+
+    #contact-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #management, #contact-info {
+        width: 100%;
     }
 
 }
