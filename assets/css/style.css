@@ -457,7 +457,6 @@ summary:hover {
     margin-top: 20px;
     width: 100vw;
     max-width: 1280px;
-    align-self: center;
 }
 
 #news, #gigs {
@@ -593,7 +592,25 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
     margin: 10px;
 }
 
+/* gallery page */
 
+#gallery-header-image {
+    margin-top: 20px;
+    width: 100vw;
+    max-width: 1280px;
+    align-self: center;
+}
+
+
+
+.gallery-box h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#gallery-insta-link {
+    text-align: center;
+}
 
 /* contact page */
 
@@ -915,6 +932,16 @@ footer {
 /* for small screens, up to 400 pixels wide */
 
 @media screen and (max-width: 400px) {
+
+    /* gallery page */
+
+    #gallery-page-heading {
+        flex-direction: column;
+    }
+
+    /* #gallery-page-heading img {
+        display: none;
+    } */
 
     /* contact page */
     .signup-form {
