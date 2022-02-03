@@ -4,7 +4,7 @@ Ritual Effect are an alternative rock band based in Dublin, Ireland. This site a
 
     (screenshot)
 
-The site can be viewed [here](url).
+The site can be viewed [here](https://markhewitt76.github.io/ritual-effect/news.html).
 
 ## Features
 ---
@@ -67,7 +67,7 @@ The site can be viewed [here](url).
 
 ### Features for Future Implementation
 
-- Form??
+
 
 ## Testing
 ---
@@ -129,14 +129,20 @@ The site is to be deployed to GitHub pages. The steps to deploy are as follows:
 - From the source section drop-down menu, select the Master Branch
 - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found [here](url).
+The live link can be found [here](https://markhewitt76.github.io/ritual-effect/news.html).
 
 ## Credits
 ---
 
 ### Content
 
-- The code for the basic structure of the social media links in the footer came from the Code Institute [Love Running](https://markhewitt76.github.io/love-running/index.html) project.
+- The code for the basic structure of the social media links in the footer, and of the signup form on the contact page, came from the Code Institute [Love Running](https://markhewitt76.github.io/love-running/index.html) project.
+
+- *responsive youtube video *
+
+- *fieldset style structure of dates on news items & gig listings *
+
+- The basic CSS code for the hover effect of the submit button on the contacts page signup form came from Colt Steele's Udemy course, 'The Web Developer Bootcamp'. 
 
 - The icons in the footer, drop-down menu and other various locations are taken from [Font Awesome](https://fontawesome.com/).
 
