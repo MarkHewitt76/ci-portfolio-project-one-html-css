@@ -27,11 +27,18 @@ h1, h2, h3 {
     font-weight: 400;
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
 hr {
     border-top: 1px solid #8b817f;
     width: 66%;
-    margin: 10px auto 0;
-    
+    margin: 10px auto 0;   
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* main header */
@@ -65,12 +72,6 @@ hr {
     margin-right: 20px;
     padding-top: 38px;
 }
-
-#main-menu li {
-    list-style-type: none;
-}
-
-/* navigation menu for larger screen widths */
 
 #main-menu-inline li {
     display: inline;
@@ -197,7 +198,6 @@ hr {
 }
 
 #band-bio-head h2 {
-    font-weight: 400;
     text-transform: uppercase;
     text-align: center;
 }
@@ -235,7 +235,6 @@ hr {
 
 .band-bio-body h3 {
     padding-top: 10px;
-    font-weight: 400;
     text-align: center;
 }
 
@@ -274,12 +273,7 @@ hr {
     justify-content: space-evenly;
 }
 
-#band-bio-afterword div h3 {
-    font-weight: 400;
-    text-decoration: none;
-}
-
-/* general styles for following pages - applies to music, video, (news and contact?) pages */
+/* general styles for following pages - applies to music, video, news and contact pages */
 
 .general-main-body {
     margin: 0 20px;
@@ -323,6 +317,19 @@ iframe {
     border-radius: 5px;
 }
 
+details[open] summary {
+    color: #8b817f;
+}
+
+summary {
+    list-style-type: none;
+}
+
+summary:hover {
+    color: #8b817f;
+    cursor: pointer;
+}
+
 /* music page */
 
 #music h1, #music h2, #music h3 {
@@ -354,17 +361,7 @@ iframe {
     width: 260px;
 }
 
-#fossils details[open] summary {
-    color: #8b817f;
-}
-
-#fossils summary:hover {
-    color: #8b817f;
-    cursor: pointer;
-}
-
-#fossils summary, #fossils ul {
-    list-style-type: none;
+#fossils ul {
     text-align: center;
 }
 
@@ -383,13 +380,11 @@ iframe {
 #fossils-listen audio {
     display: block;
     height: 20px;
-    background-color: #fff;
 }
 
 /* video page */
 
-#video h1, #video h2 {
-    font-weight: 400;
+#video h2 {
     text-transform: uppercase;
 }
 
@@ -397,8 +392,7 @@ iframe {
     margin-bottom: 20px;
 }
 
-#video h2, #video p {
-    
+#video h2, #video p {   
     text-align: center;
 }
 
@@ -444,19 +438,14 @@ iframe {
     height: 100%;
 }
 
-/* news & events page */
+/* news & events page - general page styles */
 
 #news-events {
     align-items: center;
 }
 
-#news-events h1, #news-events h2 {
-    font-weight: 400;
+#news-events h2 {
     text-transform: uppercase;
-}
-
-#news-events h3 {
-    font-weight: 400;
 }
 
 #news-events > h3 {
@@ -514,23 +503,15 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
 }
 
 .news-item-main summary, .gig-listing-main summary {
-    list-style-type: none;
     text-align: right;
     text-decoration: underline;
-}
-
-.news-item-main[open] summary, .gig-listing-main[open] summary {
-    color: #8b817f;
-}
-
-.news-item-main summary:hover, .gig-listing-main summary:hover {
-    color: #8b817f;
-    cursor: pointer;
 }
 
 .news-item-main article, .gig-listing-main section, .gig-link {
     font-size: 1.125rem;
 }
+
+/* news items only */
 
 .news-item-main section {
     display: flex;
@@ -572,7 +553,6 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
 }
 
 #too-late-news ul {
-    list-style-type: none;
     text-align: center;
 }
 
@@ -590,6 +570,8 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
     text-align: center;
     margin-top: 0;
 }
+
+/* gig listings only */
 
 .gig-listing-main section {
     display: flex;
@@ -611,11 +593,9 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
     margin: 10px;
 }
 
-/* contact page */
 
-#contact h1 {
-    text-transform: uppercase;
-}
+
+/* contact page */
 
 #contact-box {
     margin: 20px 0 40px;
@@ -629,7 +609,7 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
 #signup {
     background: url(../images/moe_sil_bg_1.jpg) no-repeat center center / cover;
     height: 600px;
-    width: 350px;
+    max-width: 400px;
     border-radius: 5px;
 
     display: flex;
@@ -643,9 +623,8 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
 }
 
 .signup-form {
-    background-color: rgba(0, 0, 0, 0.6);
-    max-width: 275px;
-    margin: 0 auto 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0 5px 5px 100px;
     padding: 10px;
     border-radius: 5px;
 }
@@ -725,6 +704,11 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
 
 .social-media-link a {
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.email-link {
+    text-align: center;
 }
 
 .email-link span {
@@ -740,6 +724,7 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
 #dummy {
     margin: 0 20px;
     align-items: center;
+    text-align: center;
 }
 
 #u-dummy {
@@ -803,8 +788,6 @@ footer {
     line-height: 1.5rem;
     text-align: center;
 }
-
-
 
 /* media queries */
 
@@ -888,7 +871,7 @@ footer {
     
 }
 
-/* for smaller screens, 600 pixels wide or less */
+/* for smaller screens, up to 600 pixels wide */
 
 @media screen and (max-width: 600px) {
 
@@ -913,6 +896,7 @@ footer {
     }
 
     /* media pages */
+
     .media-page-heading h1, .page-divider-heading h1  {
         font-size: 1.75rem;
     }
@@ -926,4 +910,15 @@ footer {
         font-size: 1rem;
     }
 
+}
+
+/* for small screens, up to 400 pixels wide */
+
+@media screen and (max-width: 400px) {
+
+    /* contact page */
+    .signup-form {
+        max-width: 275px;
+        margin: 0 10px 10px;
+    }
 }
