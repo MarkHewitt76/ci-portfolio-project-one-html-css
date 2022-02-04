@@ -971,12 +971,12 @@ footer {
 
 /* for small screens, up to 500 pixels wide */
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
 
     .picture-box img {
         height: 75px;
     }
-}
+} */
 
 /* for small screens, up to 400 pixels wide */
 
