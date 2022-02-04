@@ -260,7 +260,7 @@ ul {
     font-size: 1.125rem;
 }
 
-#band-bio-afterword p:nth-of-type(6) {
+#band-bio-afterword p:last-of-type {
     padding: 30px 0 10px 0;
     text-align: center;
     text-transform: uppercase;
@@ -294,11 +294,11 @@ ul {
 }
 
 .media-page-heading img {
-    height: 30px;
+    height: 20px;
 }
 
 .page-divider-heading {
-    margin: 70px 0 10px;
+    padding: 70px 0 10px;
     width: 100%;
     
     display: flex;
@@ -308,7 +308,7 @@ ul {
 }
 
 .page-divider-heading img {
-    height: 30px;
+    height: 20px;
 }
 
 iframe {
@@ -595,17 +595,34 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
 /* gallery page */
 
 #gallery-header-image {
-    margin-top: 20px;
     width: 100vw;
+}
+
+#gallery-header-image, .gallery-box {
+    margin-top: 20px;
     max-width: 1280px;
     align-self: center;
 }
 
-
-
-.gallery-box h3 {
+.gallery-box p, .gallery-box h3:last-of-type {
     text-align: center;
     text-decoration: underline;
+}
+
+.picture-box {
+    line-height: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;  
+}
+
+.picture-box img {
+    height: 200px;
+    margin: 2.5px;
+    border: 1px solid #8b817f;
+    padding: 5px;
 }
 
 #gallery-insta-link {
