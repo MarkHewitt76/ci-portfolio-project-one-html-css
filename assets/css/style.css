@@ -604,13 +604,17 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
     align-self: center;
 }
 
-.gallery-box p, .gallery-box h3:last-of-type {
+.gallery-box p, .gallery-box h3 {
     text-align: center;
+}
+
+.gallery-box h3:last-of-type {
     text-decoration: underline;
 }
 
 .picture-box {
     line-height: 0;
+    margin-bottom: 20px;
 
     display: flex;
     justify-content: center;
@@ -627,6 +631,7 @@ https://css-tricks.com/snippets/css/non-form-fieldset-look/ */
 
 #gallery-insta-link {
     text-align: center;
+    margin: 20px 0;
 }
 
 /* contact page */
