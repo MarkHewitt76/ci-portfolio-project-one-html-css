@@ -21,7 +21,7 @@
 
         <nav id="main-menu">
 
-            <!-- menu for larger screens -->
+            <!-- inline menu for larger screens -->
             <div id="main-menu-inline">
                 <ul>
                     <li>
@@ -81,7 +81,7 @@
     </header>
 
     <main id="contact" class="general-main-body">
-
+        <!-- page heading -->
         <div class="media-page-heading">
             <img src="assets/images/u_symbol_trans.png" alt="Ritual Effect 'U' symbol">
             <h1>Contact Us</h1>
@@ -89,7 +89,7 @@
         </div>
         <hr>
         <div id="contact-box">
-        
+            <!-- signup form for newsletter that's yet to be fully implemented, so instead uses method="GET" instead of "POST" to link to dummy.html containing a disclaimer & playable track from 'Fossils' album  -->
             <section id="signup">
                 <h2>Sign Up for our Newsletter</h2>
                 <form method="GET" action="dummy.html" class="signup-form">
@@ -98,13 +98,10 @@
                             <legend>
                                 <span>Contact Info</span> (required)
                             </legend>
-                        
                             <label for="fname">First Name</label>
                             <input id="fname" name="first_name" type="text" class="text-input" required>
-
                             <label for="lname">Last Name</label>
                             <input id="lname" name="last_name" type="text" class="text-input" required>
-
                             <label for="email">Email Address</label>
                             <input type="email" id="email" name="email_address" class="text-input" required>
                         </fieldset>
@@ -129,21 +126,25 @@
                         </fieldset>
                     </section>
                     <section id="signup-button-box">
-                    <input class="signup-button" type="submit" value="Sign Up">
+                        <input class="signup-button" type="submit" value="Sign Up">
                     </section>
                 </form>
             </section>
-
+            <!-- contact details section -->
             <section id="contact-details">
+                <!-- management details section heading -->
                 <div class="page-divider-heading">
                     <img src="assets/images/u_symbol_trans.png" alt="Ritual Effect 'U' symbol">
                     <h2>Management</h2>
                     <img src="assets/images/u_symbol_trans.png" alt="Ritual Effect 'U' symbol">
                 </div>
+                <!-- management details section -->
                 <div id="management">
+                    <!-- Split Screen Management log & external link to website  -->
                     <a href="http://www.splitscreenproduction.com/" target="_blank" rel="noopener" aria-label="Split Screen Management Website (opens in a new tab)">
                         <img src="assets/images/ssm_trans.png" alt="Split Screen Management">
                     </a>
+                    <!-- Split Screen Management facebook & email links -->
                     <div class="social-media-link">
                         <p>Find us on:
                            <a href="https://www.facebook.com/SplitScreenManagement/" target="_blank" rel="noopener" aria-label="Split Screen Management facebook page (opens in a new tab)">facebook <i class="fab fa-facebook"></i></a>
@@ -152,17 +153,21 @@
                     <div class="email-link">
                     <p>
                         <span><i class="fas fa-at"></i> Email:</span>
-                        <a href="mailto: kimmo@splitscreenproduction.com" target="_blank">kimmo@splitscreenproduction.com</a>
+                        <a href="mailto:kimmo@splitscreenproduction.com" target="_blank">kimmo@splitscreenproduction.com</a>
                     </p>
                     </div>
                 </div>
+                <!-- band details section heading -->
                 <div class="page-divider-heading">
                     <img src="assets/images/u_symbol_trans.png" alt="Ritual Effect 'U' symbol">
                     <h2>Contact Info</h2>
                     <img src="assets/images/u_symbol_trans.png" alt="Ritual Effect 'U' symbol">
                 </div>
+                <!-- band details section -->
                 <div id="contact-info">
+                    <!-- band logo -->
                     <img src="assets/images/ritual_effect_logo_white_transbg.png" alt="Ritual Effect">
+                    <!-- band social media & email links -->
                     <p>can be found on:</p>
                     <div class="social-media-link">
                         <p>
@@ -177,7 +182,7 @@
                     <div class="email-link">
                         <p>
                             <span><i class="fas fa-at"></i> Email:</span>
-                            <a href="mailto: band@ritualeffect.com" target="_blank">band@ritualeffect.com</a>
+                            <a href="mailto:band@ritualeffect.com" target="_blank">band@ritualeffect.com</a>
                         </p>
                         </div>
                 </div>
@@ -188,7 +193,7 @@
     </main>
 
     <footer>
-        
+        <!-- footer links to external sites/pages related to band -->
         <ul class="social-networks">
             <li>
                 <a href="https://soundcloud.com/user-401438334-115246783" target="_blank" rel="noopener" aria-label="Stream our music on soundcloud (opens in a new tab)"><i class="fab fa-soundcloud"></i></a>
@@ -212,7 +217,7 @@
                 <a href="https://www.instagram.com/ritualeffect/?hl=en" target="_blank" rel="noopener" aria-label="Visit our instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
             </li>
         </ul>
-
+        <!-- copyright statement -->
         <div id="copyright-statement">
             &copy; 2020 Ritual Effect: all rights reserved
         </div>
