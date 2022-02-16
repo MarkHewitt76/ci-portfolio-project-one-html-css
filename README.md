@@ -1,8 +1,8 @@
 # Ritual Effect
 
-Ritual Effect are an alternative rock band based in Dublin, Ireland. This site aims to promote the band's music, live shows, etc. and is targeted towards both fans and music industry professionals alike, as well as the casual visitor. Users of this site will be able to access the band's music and videos through embedded audio and video files, links to media and streaming sites and links to their various social media pages. Users can also read a band biography, see news about upcoming releases and live performances, and find contact and booking information. (There is also a form to sign up to the band's mailing list (time permitting!?).)
+Ritual Effect are an alternative rock band based in Dublin, Ireland. This site aims to promote the band's music, live shows, etc. and is targeted towards both fans and music industry professionals alike, as well as the casual visitor. Users of this site will be able to access the band's music and videos through embedded audio and video files, links to media and streaming sites and links to their various social media pages. Users can also read a band biography, see news about upcoming releases and live performances, and find contact and booking information. There is also a form to sign up to the band's mailing list.
 
-    (screenshot)
+![Homepage screenshot](/assets/images/screenshots/ritualeffect_homepage_responsive.png "Homepage")
 
 The site can be viewed [here](https://markhewitt76.github.io/ritual-effect/news.html).
 
@@ -11,19 +11,40 @@ The site can be viewed [here](https://markhewitt76.github.io/ritual-effect/news.
 ### Existing Features
 - Navigation Bar
 
-    (screenshot)
+    - Featured on all pages across the site, the navigation bar includes the Logo and links to the Home page, Band page, Music page, Videos page, News/Events page, Gallery and Contact page. It is fixed to the top and is identical in each page to allow for easy navigation. The logo also serves as a link to the Home page.
+
+    - As a responsive design feature, the bar changes from an inline menu on larger screens to a drop-down, 'hamburger' style menu on small and medium sized screens, containing all the same links and features.
+
+    - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+
+    - The link to the page currently being displayed appears in uppercase with a double underline, allowing the user to tell at a galnce where they are on the site.
+
+    ![Inline navigation bar screenshot](/assets/images/screenshots/ritualeffect_navbar_inline_7.png "Inline navigation bar")
+    ![Drop-down navigation menu screenshot](/assets/images/screenshots/ritualeffect_navbar_dropdown.png "Drop-down navigation menu")
+    ![Drop-down navigation menu open screenshot](/assets/images/screenshots/ritualeffect_navbar_dropdown_1.png "Drop-down navigation menu open")
 
 - Landing Page Image
 
-    (screenshot)
+    - The landing, as seen in the introductory section, includes a full-page, eye-catching photograph of the band posing flamboyantly outside Sin-É, a well-known Dublin music venue.
+    
+    - This immediately introduces the user to the band's flamboyant nature.
 
 - Call to Action
 
-    (screenshot)
+    - The landing image is overlaid with a call to action linking to the music page and containing album art and icons providing visual information on where the link leads.
+
+    - This lets the user know that the band's album, Fossils, is available on various streaming sites and directs them straight away to where they can listen to it.
+
+    ![Call to action screenshot](/assets/images/screenshots/ritualeffect_calltoaction.png "Call to action")
 
 - Footer
 
-    (screenshot)
+    - The footer section, also featured on all pages across the site, includes links to the relevant streaming and social media sites for Ritual Effect. The links will open to a new tab to allow easy navigation for the user. It also includes a copyright statement.
+
+    - The footer is valuable to the user as it encourages them to stream the band's music, watch their videos and keep connected via social media.
+
+    ![Footer screenshot](/assets/images/screenshots/ritualeffect_footer.png "Footer")
+
 
 - Band Bio Page
 
