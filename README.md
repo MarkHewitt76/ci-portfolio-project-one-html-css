@@ -25,9 +25,9 @@ The site can be viewed [here](https://markhewitt76.github.io/ritual-effect/news.
 
 - Landing Page Image
 
-    - The landing, as seen in the introductory section, includes a full-page, eye-catching photograph of the band posing flamboyantly outside Sin-É, a well-known Dublin music venue.
+    - The landing, as seen in the introductory section of this README, includes a full-page, eye-catching photograph of the band posing flamboyantly outside Sin-É, a well-known Dublin music venue.
     
-    - This immediately introduces the user to the band's flamboyant nature.
+    - This immediately introduces the user to the band's outgoing, eccentric nature.
 
 - Call to Action
 
@@ -39,56 +39,104 @@ The site can be viewed [here](https://markhewitt76.github.io/ritual-effect/news.
 
 - Footer
 
-    - The footer section, also featured on all pages across the site, includes links to the relevant streaming and social media sites for Ritual Effect. The links will open to a new tab to allow easy navigation for the user. It also includes a copyright statement.
+    - The footer section, also featured on all pages across the site, includes links to the relevant streaming and social media sites for Ritual Effect. The links will open in a new tab to allow easy navigation for the user. It also includes a copyright statement.
 
     - The footer is valuable to the user as it encourages them to stream the band's music, watch their videos and keep connected via social media.
 
     ![Footer screenshot](/assets/images/screenshots/ritualeffect_footer.png "Footer")
 
 
-- Band Bio Page
+- Band Page
 
-(screenshot)
+    - The Band page consists of an official press release about Ritual Effect and its members, including images of them performing live. There are links to the top of the page and the Contact page at the bottom and links to the Music page in the article itself.
 
-- Music & Videos Page
+    - This page provides information on the history of the band, their music style, performance style and releases. It is useful to both fans and casual visitors who wish to learn more about the band. It is also useful to music industry professionals as it provides relevant information and easy access to the band's music and contact information.
 
-    (screenshot)
+    ![Band page screenshot](/assets/images/screenshots/ritualeffect_bandpage_responsive.png "Band page")
 
-    - Music Section
+- Music Page
 
-    (screenshot)
+    - The Music page showcases the band's releases to date: their current album, Fossils and their upcoming mini-album, Too Late to Turn Back.
 
-    - Video Section
+    - The section on Fossils includes the album art, links to the three main streaming sites on which it's featured and a drop-down menu containing three embedded audio tracks as samples, with basic controls for immediate playback. It was intended to include a link to cdbaby.com, where the album was avaialble for purchase and download, but that site has ceased operating.
 
-    (screenshot)
+    - The section on Too Late to Turn Back includes the album art and an embedded YouTube video teaser trailer.
 
-- News & Events Page
+    - This page allows the user immediate access to some of the bands music and direct links to the full album on their preferred streaming service. The links open in a new tab and the YouTube video is embedded so that the user is not forced to navigate away from the Ritual Effect website.
 
-    (screenshot)
+    - The page will be updated as new music is released.
 
-    - Latest News Section
+    ![Music page screenshot](/assets/images/screenshots/ritualeffect_musicpage_responsive.png "Music page")
 
-    (screenshot)
+- Videos Page
 
-        Begins with a link to a separate page listing upcoming gigs.
+    - The Videos page is comprised of embedded YouTube and facebook videos, divided into three sections: Music Videos, Home Videos and Interviews. 
 
-    - Upcoming Gigs Page
+        - The Music Videos section includes the band's official videos for four songs from the Fossils album and a link to their YouTube channel
 
-    (screenshot)
+        - The Home Videos section includes an embedded facebook video of the band in their rehearsal room and a link to their facebook video page. This section will be expanded to include directly playable home videos of the band, using the HTML video element, as they become available in appropriate file sizes.
 
-        Begins with links: 'Back to News'; 'Back to Home'.
+        - The Interviews section includes an embedded, scalable YouTube video of the band being interviewed by Metalheads Forever Magazine as well as links to the sites where this interview was featured. This section will be expanded as more interviews are recorded.
+
+    - This page allows the user to see the band performing on camera and in a live setting, as well as providing a glimpse into their lives off stage. It also provides a forum for the band to keep the user personally informed.
+
+    - All links open in a new tab and the videos are embedded so that the user is not forced to navigate away from the Ritual Effect website. 
+
+    ![Videos page screenshot](/assets/images/screenshots/ritualeffect_videopage_responsive.png "Videos page")
+
+- News/Events Page
+
+    - The News/Events page has a heading with links to two main sections: Latest News and Gigs. The page is divided by banner images and sub-headings for each section.
+
+    - The sections are comprised of several news items and gig listings respectively, beginning with the most recent and each following the same format as detailed below:
+
+        - The Latest News section is a series of articles consisting of a fieldset-style date of publication over a headline. The body of each article is contained in an expandable disclosure widget which uses the HTML details and summary elements. They all include a story or synopsis, a related image or embedded video and an external link to the relevant website. 
+
+        - The Gigs section is a series of listings consisting of a fieldset-style event date over a headline. The body of each listing is also contained in an expandable disclosure widget. They all include: the date, time, admission fee and a short description of each gig; the names and facebook links of each contributing artist; the name and facebook link of the venue; an image of the gig poster; a link to the relevant facebook event page.
+
+        - All external links open in a new tab for ease of navigation.
+
+    - Both sections are followed by a link back to the top of the page
+
+    - This page will be updated regularly. It is valuable to any user that wants to be kept up to date on what's happening with the band and/or where to see them perform live.
+
+    ![News and Events page screenshot](/assets/images/screenshots/ritualeffect_newspage_responsive.png "News/Events page")
 
 - Gallery Page
 
-    (screenshot)
+    - The gallery page has a heading with links to three main sections: Gig Pics, The Band and Backstage.
+
+        - The Gig Pics section includes large thumbnail images of the band performing together.
+
+        - The Band section is further divided into subsections, each including large thumbnail images of individual band members.
+
+        - The Backstage section includes large thumbnail images of random aspects of everyday life as a band.
+
+    - All images can be viewed full-size in a separate tab if clicked or tapped on.
+
+    - Each section is followed by a link back to the top of the page.
+
+    - This page is useful for any user interested in seeing how the band interact both on and off stage.
+
+    ![Gallery page screenshot](/assets/images/screenshots/ritualeffect_gallerypage_responsive.png "Gallery page")
 
 - Contacts Page
 
-    (screenshot)
+    - The Contacts page will allow the user to sign up for the Ritual Effect email newsletter and to find contact information for both the band's management and the band themselves. It includes email and social media links for both.
+
+    - All external links open in a new tab for ease of navigation.
+
+    - The signup form asks the user to enter their full name and email address and, optionally, their age range.
+
+    ![Contact page screenshot](/assets/images/screenshots/ritualeffect_contactpage_responsive.png "Contact page")
+
+    - As the newsletter has not been fully implemented to date, the form, once filled out, links to a separate page with a disclaimer, bonus track from the Fossils album and a link back to the Contact page.
+
+    ![Disclaimer page screenshot](/assets/images/screenshots/ritualeffect_dummypage_responsive.png "Disclaimer")
 
 ### Features for Future Implementation
 
-
+- A site-wide audio player so that the user can stream the band's music without having to leave the site or stay on the 'Music' page.
 
 ## Testing
 ---
