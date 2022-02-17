@@ -33,13 +33,11 @@ The site can be viewed [here](https://markhewitt76.github.io/ritual-effect/news.
 
 - Music Industry Goals
 
-    i. As a Music Industry Professional, I want to learn about the band's style and what they're like to work with.
+    i. As a Music Industry Professional, I want to hear the band's music, read reviews and see them perform so that I can learn about the band's style and what they're like to work with.
 
-    ii. As a Music Industry Professional, I want to hear the band's music, read reviews and see them perform so that I can determine whether or not they're worth a closer look.
+    ii. As a Music Industry Professional, I want to locate the band's social media links so that I can see their followings on social media and determine how well-liked, respected and known they are.
 
-    iii. As a Music Industry Professional, I want to locate the band's social media links so that I can see their followings on social media and determine how well-liked, respected and known they are.
-
-    iv. As a Music Industry Professional, I want to find out how to contact the band and their management so that I can arrange bookings, recordings, etc.
+    iii. As a Music Industry Professional, I want to find out how to contact the band and their management so that I can arrange bookings, recordings, etc.
 
 ### Design
 
@@ -49,7 +47,7 @@ The site can be viewed [here](https://markhewitt76.github.io/ritual-effect/news.
 
 - Typography
 
-    The main fonts used throughout the site are 'Tillana' and 'Skranji', with Sans Serif as the fallback font in case for any reason these fonts aren't being imported into the site correctly. Both were chosen for how they resemble and complement the lettering style of the Ritual Effect logo.
+    The main fonts used throughout the site are 'Tillana' and 'Skranji', with Sans Serif as the fallback font in case, for any reason, these fonts aren't being imported into the site correctly. Both were chosen for how they resemble and complement the lettering style of the Ritual Effect logo.
 
 - Imagery
 
@@ -100,7 +98,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
 - Band Page
 
-    - The Band page consists of an official press release about Ritual Effect and its members, including images of them performing live. There are links to the top of the page and the Contact page at the bottom and links to the Music page in the article itself.
+    - The Band page consists of an official press release about Ritual Effect and its members, including images of them performing live. There are links at the bottom to the Contact page and back to the top of the page, and links to the Music page in the article itself.
 
     - This page provides information on the history of the band, their music style, performance style and releases. It is useful to both fans and casual visitors who wish to learn more about the band. It is also useful to music industry professionals as it provides relevant information and easy access to the band's music and contact information.
 
@@ -110,13 +108,13 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     - The Music page showcases the band's releases to date: their current album, Fossils and their upcoming mini-album, Too Late to Turn Back.
 
-    - The section on Fossils includes the album art, links to the three main streaming sites on which it's featured and a drop-down menu containing three embedded audio tracks as samples, with basic controls for immediate playback. It was intended to include a link to cdbaby.com, where the album was avaialble for purchase and download, but that site has ceased operating.
+    - The section on Fossils includes the album art, links to the three main streaming sites on which the album is featured and a drop-down menu containing three embedded audio tracks as samples, with basic controls for immediate playback. It was intended to include a link to cdbaby.com, where the album was avaialble for purchase and download, but that site has ceased operating.
 
     - The section on Too Late to Turn Back includes the album art and an embedded YouTube video teaser trailer.
 
     - This page allows the user immediate access to some of the bands music and direct links to the full album on their preferred streaming service. The links open in a new tab and the YouTube video is embedded so that the user is not forced to navigate away from the Ritual Effect website.
 
-    - The page will be updated as new music is released.
+    - The page will be updated and expanded as new music is released.
 
     ![Music page screenshot](/assets/images/screenshots/ritualeffect_musicpage_responsive.png "Music page")
 
@@ -140,7 +138,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     - The News/Events page has a heading with links to two main sections: Latest News and Gigs. The page is divided by banner images and sub-headings for each section.
 
-    - The sections are comprised of several news items and gig listings respectively, beginning with the most recent and each following the same format as detailed below:
+    - The sections are comprised of several news items and gig listings respectively, beginning with the most recent and each following the same format, as detailed below:
 
         - The Latest News section is a series of articles consisting of a fieldset-style date of publication over a headline. The body of each article is contained in an expandable disclosure widget which uses the HTML `<details>` and `<summary>` elements. They all include a story or synopsis, a related image or embedded video and an external link to the relevant website. 
 
@@ -263,7 +261,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     i. As a Casual/First-time Visitor, I want to easily understand the main purpose of the site and learn more about the band.
 
-    - Immediately upon entering the site, the user is greeted with a clean and easily readable navigation bar or drop-down menu to go to the page of their choice. There is also a full-page hero image with a call to action overlay.
+    - Immediately upon entering the site, the user is greeted with a clean and easily readable navigation bar or drop-down menu to get to the page of their choice. There is also a full-page hero image with a call to action overlay.
 
     - The purpose of the site is made clear by the logo, hero image and call to action.
 
@@ -364,9 +362,9 @@ This site is responsive on all device sizes and includes interactive elements, d
 ```
 #### Unfixed Bug
 
-- #### `<summary>` element marker showing in Safari
+- #### Default `<summary>` element marker showing in Safari
 
-    When testing the website in different browsers, I noticed that the triangular,default marker on all `<summary>` elements was still showing up in Safari alone, despite the CSS property `list-style-type: none;` being applied. According to various searches, this is apparently because `list-style-type` isn't supported on the `<summary>` element in webkit-based browsers, although it seems to work on `<ul>` and `<li>` elements.
+    When testing the website in different browsers, I noticed that the triangular, default marker on all `<summary>` elements was still showing up in Safari alone, despite the CSS property `list-style-type: none;` being applied. According to various searches, this is apparently because `list-style-type` isn't supported on the `<summary>` element in webkit-based browsers, although it seems to work on `<ul>` and `<li>` elements.
 
     My search for a solution yielded some suggestions: on Stack Overflow, [here](https://stackoverflow.com/a/66814239); on GitHub, [here](https://github.com/Fyrd/caniuse/issues/5869); and a 3rd on Stack Overflow, [here](https://stackoverflow.com/a/70834941). These led me to try out the following code, so far to no avail, though at the time of writing, I'm awaiting a family member's help with a final test.
 
@@ -395,15 +393,44 @@ or
 
 The website was deployed to GitHub pages. The steps to deploy are as follows:
 
-- In the GitHub repository, navigate to the Settings tab
-- From the source section drop-down menu, select the Master Branch
-- Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+1. In the GitHub repository, navigate to the Settings tab
+
+2. From the source section drop-down menu, select the Master Branch
+
+3. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 The live link can be found [here](https://markhewitt76.github.io/ritual-effect/news.html).
 
 ### Forking the GitHub Repository
 
+By forking the GitHub Repository you can make a copy of the original repository on your GitHub account to view and/or make changes, without affecting the original repository, by using the following steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/MarkHewitt76/ritual-effect)
+
+2. At the top of the Repository, just above the "Settings" Button on the menu, click the "Fork" Button. 
+
+3. You should now have a copy of the original repository in your GitHub account.
+
 ### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/MarkHewitt76/ritual-effect)
+
+2. Under the repository name, click "Clone or download".
+
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+
+4. Open Git Bash
+
+5. Change the current working directory to the location where you want the cloned directory to be made.
+
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+    e.g: `$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
+
+7. Press Enter. Your local clone will be created.
+
+Click [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for a more detailed explanation of the process.
+
 
 ## Credits
 ---
@@ -424,7 +451,7 @@ The live link can be found [here](https://markhewitt76.github.io/ritual-effect/n
 
 ### Media
 
-All images, audio files and video files are the property of Ritual Effect and were supplied by the band.
+- All images, audio files and video files are the property of Ritual Effect and were supplied by the band.
 
 ### Acknowledegements
 
