@@ -228,17 +228,34 @@ This site is responsive on all device sizes and includes interactive elements, d
 
 - HTML
 
-    Check no errors are returned when passing through the official [W3C validator](url).
+    The official [W3C Markup Validation Service](https://validator.w3.org/) was used to validate every page of the site to ensure there were no syntax errors in the code. The only errors returned were from embed links copied and pasted from facebook and YouTube, trying to add text and/or aria labels to said links and, for some reason, the controlslist attribute in audio elements.
+
+    Results:
+    - [Home Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Findex.html)
+    - [Band Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fband.html)
+    - [Music Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fmusic.html)
+    - [Videos Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fvideo.html)
+    - [News/Events Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fnews.html)
+    - [Gallery Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fgallery.html)
+    - [Contact Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fcontact.html)
+    - [Disclaimer Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fdummy.html)
 
 - CSS
 
-    Check no errors are returned when passing through the official [(Jigsaw) validator](url).
+    The official [W3C CSS (Jigsaw) Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate [style.css](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) and no errors were returned.
 
-- Accesiblity
+- Accessiblity
 
-    Confirm that the website is accsessible and easy to read by running it through Lighthouse in devtools.
+    Every page was run through Lighthouse in devtools in order to confirm that the website is accsessible and easy to read.
 
-    (screenshot)
+    ![Lighthouse Home Page screenshot](/assets/images/screenshots/lighthouse_homepage.png "Lighthouse - Home Page")
+    ![Lighthouse Band Page screenshot](/assets/images/screenshots/lighthouse_bandpage.png "Lighthouse - Band Page")
+    ![Lighthouse Music Page screenshot](/assets/images/screenshots/lighthouse_musicpage.png "Lighthouse - Music Page")
+    ![Lighthouse Videos Page screenshot](/assets/images/screenshots/lighthouse_videopage.png "Lighthouse - Videos Page")
+    ![Lighthouse News and Events Page screenshot](/assets/images/screenshots/lighthouse_newspage.png "Lighthouse - News/Events Page")
+    ![Lighthouse Gallery Page screenshot](/assets/images/screenshots/lighthouse_gallerypage.png "Lighthouse - Gallery Page")
+    ![Lighthouse Contact Page screenshot](/assets/images/screenshots/lighthouse_contactpage.png "Lighthouse - Contact Page")
+    ![Lighthouse Disclaimer Page screenshot](/assets/images/screenshots/lighthouse_dummypage.png "Lighthouse - Disclaimer Page")
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -246,61 +263,83 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     i. As a Casual/First-time Visitor, I want to easily understand the main purpose of the site and learn more about the band.
 
+    - Immediately upon entering the site, the user is greeted with a clean and easily readable navigation bar or drop-down menu to go to the page of their choice. There is also a full-page hero image with a call to action overlay.
 
+    - The purpose of the site is made clear by the logo, hero image and call to action.
+
+    - The user has a host of options from the navigation bar or menu by which to learn about the band, primarily by clicking the link to the Band page itself. 
 
     ii. As a Casual/First-time Visitor, I want to be able to easily navigate through the site to find content.
 
+    - The site has been designed to be fluid and never to entrap the user. At the top of each page and fixed to the top of the screen is a clean navigation bar or drop-down menu. Each link clearly describes what page the user will get to.
 
+    - The longer pages have headings containing links to specific sections and/or periodic links that will take the user back to the top of the page.
 
 - Music Lover Goals
 
     i. As a Music Lover, I want to be able to listen to the band's music so that I can decide whether or not to start following them.
 
+    - The user has two options immediately upon entering the site: click the call to action overlay or the Music link in the navigation menu to be taken directly to the Music page.
 
+    - On the Music page, the user can listen to sample tracks right away or click the external links to various streaming services.
+
+    - The user can scroll to the bottom of any page on the site to find links in the footer to the band's profile on various streaming services. 
 
     ii. As a Music Lover, I want to find out what venues they play and what other bands they're associated with so that I can determine if I want to see them live.
 
+    - The user can find information about regular venues on the Band page. They can also see various venues that the band have performed at on the gallery page and in background and banner images throughout the site.
 
+    - Details of upcoming and past performances in the Gigs section of the News/Events page detail the venues that the band have played or will play, as well as listing the various bands they play with.
+
+    - There are links to the band's social media pages in the footer, on the Contact page and throughout the site, where the user can see what other bands they're associated with via comments, 'following' details, event pages, etc. 
 
 - Fan Goals
 
     i. As a Fan of Ritual Effect, I want to find the latest news so that I can keep up to date with new releases, developments, etc.
 
-
+    - The Latest News section of the News/Events page provides the user with up to date information on all that's happening with Ritual Effect. Such information can also be found on the Music and Videos pages, as well as through the various links to the band's social media pages.
 
     ii. As a Fan of Ritual Effect, I want to find out about upcoming performances by the band so that I can see them live whenever possible.
 
-
+    - The Gigs section of the News/Events page contains all the latest information on upcoming performances. The user can also avail of the many social media links.
 
     iii. As a Fan of Ritual Effect, I want to find any and all sources of information regarding the band so that I can remain well informed about them.
 
+    - The user can find comprehensive information about Ritual Effect on the Band page.
 
+    - Up to date, current information can be found on the News/events page.
+
+    - The Contact page has a form that the user can complete in order to sign up for the band's email newsletter.
+
+    - The footer at the bottom of every page contains links which provide access to the virtual entirety of the band's online presence, not to mention the external links scattered throughout the site.
 
 - Music Industry Goals
 
-    i. As a Music Industry Professional, I want to learn about the band's style and what they're like to work with.
+    i. As a Music Industry Professional, I want to hear the band's music, read reviews and see them perform so that I can learn about the band's style and what they're like to work with.
 
+    - The user can read the official Ritual Effect press release on the Band Page.
 
+    - The News/Events page contains details of the latest reviews and articles about the band.
 
-    ii. As a Music Industry Professional, I want to hear the band's music, read reviews and see them perform so that I can determine whether or not they're worth a closer look.
+    - The Music and Videos pages offer the user a window into the band's performance style and personality.  
 
+    ii. As a Music Industry Professional, I want to locate the band's social media links so that I can see their followings on social media and determine how well-liked, respected and known they are.
 
+    - The band's social media links are dotted throughout the site, most prominently on the Contact page and in the footer at the bottom of every page.
 
-    iii. As a Music Industry Professional, I want to locate the band's social media links so that I can see their followings on social media and determine how well-liked, respected and known they are.
+    iii. As a Music Industry Professional, I want to find out how to contact the band and their management so that I can arrange bookings, recordings, etc.
 
-
-
-    iv. As a Music Industry Professional, I want to find out how to contact the band and their management so that I can arrange bookings, recordings, etc.
-
-    
+    - The user can find contact information for the band and their representatives, Split Screen Management, on the Contact page and in some of the articles on the News/Events page.
 
 ### Further Testing
 
-- Verify that this website works in various browsers: Chrome; Firefox; Safari; Microsoft Edge.
+- The website was tested in various browsers: Google Chrome; Mozilla Firefox; Microsoft Edge; Safari.
 
-- Confirm that this website is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar.
+- The website was tested for responsive design, appearance and functionality on all standard screen sizes using the Chrome devtools device toolbar. It was also tested on various physical devices such as: low and high resolution desktop and laptop displays; various Android tablets and iPads; Samsung Galaxy S6, S8, S9 and A52 5G; iPhone 8, 11 and 12 Mini.
 
-- Confirm that the header, navigation links and content are readable and understandable.
+- A large amount of testing was done to ensure that all pages were linking correctly and that no external links were broken.
+
+- Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues. One family member with impaired vision was asked to confirm that the header, navigation links and content were readable and understandable.
 
 ### Bugs
 
