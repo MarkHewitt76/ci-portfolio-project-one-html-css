@@ -325,6 +325,13 @@ summary {
     list-style-type: none;
 }
 
+/* The following is an attempt to fix a bug I noticed in Safari alone, where the  default marker on the summary element was still showing. According to various searches, this is apparently because `list-style-type` isn't supported on the summary element in webkit-based browsers, although it seems to work on ul and li elements. I found one suggestion on Stack Overflow, here: https://stackoverflow.com/a/66814239; another on GitHub, here: https://github.com/Fyrd/caniuse/issues/5869; and a third on Stack Overflow, here: https://stackoverflow.com/a/70834941. I've combined two of them below. */
+
+summary::marker {
+    display: none;
+    content: none;
+  }
+
 summary:hover {
     color: #8b817f;
     cursor: pointer;
