@@ -6,9 +6,62 @@ Ritual Effect are an alternative rock band based in Dublin, Ireland. This site a
 
 The site can be viewed [here](https://markhewitt76.github.io/ritual-effect/news.html).
 
+## User Experience (UX)
+---
+
+### User Stories
+
+- Casual/First-time Visitor Goals
+
+    i. As a Casual/First-time Visitor, I want to easily understand the main purpose of the site and learn more about the band.
+
+    ii. As a Casual/First-time Visitor, I want to be able to easily navigate through the site to find content.
+
+- Music Lover Goals
+
+    i. As a Music Lover, I want to be able to listen to the band's music so that I can decide whether or not to start following them.
+
+    ii. As a Music Lover, I want to find out what venues they play and what other bands they're associated with so that I can determine if I want to see them live.
+
+- Fan Goals
+
+    i. As a Fan of Ritual Effect, I want to find the latest news so that I can keep up to date with new releases, developments, etc.
+
+    ii. As a Fan of Ritual Effect, I want to find out about upcoming performances by the band so that I can see them live whenever possible.
+
+    iii. As a Fan of Ritual Effect, I want to find any and all sources of information regarding the band so that I can remain well informed about them.
+
+- Music Industry Goals
+
+    i. As a Music Industry Professional, I want to learn about the band's style and what they're like to work with.
+
+    ii. As a Music Industry Professional, I want to hear the band's music, read reviews and see them perform so that I can determine whether or not they're worth a closer look.
+
+    iii. As a Music Industry Professional, I want to locate the band's social media links so that I can see their followings on social media and determine how well-liked, respected and known they are.
+
+    iv. As a Music Industry Professional, I want to find out how to contact the band and their management so that I can arrange bookings, recordings, etc.
+
+### Design
+
+- Colour Scheme
+    
+    Primarily white on black with shades of grey.
+
+- Typography
+
+    The main fonts used throughout the site are 'Tillana' and 'Skranji', with Sans Serif as the fallback font in case for any reason these fonts aren't being imported into the site correctly. Both were chosen for how they resemble and complement the lettering style of the Ritual Effect logo.
+
+- Imagery
+
+    The general colour scheme is complemented and enhanced by the use of both black-and-white and colour images. The large background and banner images were carefully selected to be striking and catch the user's attention. All imagery on the site was chosen to portray Ritual Effect's exuberant, energetic and flamboyant nature, both on and off stage.
+
 ## Features
 ---
+
 ### Existing Features
+
+This site is responsive on all device sizes and includes interactive elements, detailed below.
+
 - Navigation Bar
 
     - Featured on all pages across the site, the navigation bar includes the Logo and links to the Home page, Band page, Music page, Videos page, News/Events page, Gallery and Contact page. It is fixed to the top and is identical in each page to allow for easy navigation. The logo also serves as a link to the Home page.
@@ -44,7 +97,6 @@ The site can be viewed [here](https://markhewitt76.github.io/ritual-effect/news.
     - The footer is valuable to the user as it encourages them to stream the band's music, watch their videos and keep connected via social media.
 
     ![Footer screenshot](/assets/images/screenshots/ritualeffect_footer.png "Footer")
-
 
 - Band Page
 
@@ -130,18 +182,121 @@ The site can be viewed [here](https://markhewitt76.github.io/ritual-effect/news.
 
     ![Contact page screenshot](/assets/images/screenshots/ritualeffect_contactpage_responsive.png "Contact page")
 
-    - As the newsletter has not been fully implemented to date, the form, once filled out, links to a separate page with a disclaimer, bonus track from the Fossils album and a link back to the Contact page.
+    - As the newsletter has not been fully implemented to date, the form, once filled out, links to a separate page with a disclaimer, a bonus track from the Fossils album and a link back to the Contact page.
 
     ![Disclaimer page screenshot](/assets/images/screenshots/ritualeffect_dummypage_responsive.png "Disclaimer")
 
 ### Features for Future Implementation
 
-- A site-wide audio player so that the user can stream the band's music without having to leave the site or stay on the 'Music' page.
+- A site-wide audio player so that the user can stream the band's music without having to leave the site or stay on the Music page.
+
+## Technologies Used
+---
+
+### Languages Used
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+
+### Libraries & Programs Used
+
+1. [Google Fonts](https://fonts.google.com/)
+
+    Google fonts were used to import the 'Tillana' and 'Skranji' fonts into the style.css file which is used on all pages throughout the project.
+
+2. [Font Awesome](https://fontawesome.com/)
+
+    Font Awesome was used on all pages throughout the site to add icons for aesthetic and UX purposes.
+
+3. [Git](https://git-scm.com/)
+
+    Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+
+4. [GitHub](https://github.com/)
+
+    GitHub is used to store the projects code after being pushed from Git.
+
+5. [Paint Shop Pro](https://en.wikipedia.org/wiki/PaintShop_Pro)
+
+    [Corel Paint Shop Pro Photo XI](http://www.corel.com/akdlm/6763/downloads/Documentation/UserGuides/EN/CorelPaintShopProPhoto.pdf) was used for resizing images and editing photos for the site.
 
 ## Testing
 ---
 
-- Verify that this website works in various browsers: Chrome; Firefox; Safari; Opera.
+### Validator Testing
+
+- HTML
+
+    Check no errors are returned when passing through the official [W3C validator](url).
+
+- CSS
+
+    Check no errors are returned when passing through the official [(Jigsaw) validator](url).
+
+- Accesiblity
+
+    Confirm that the website is accsessible and easy to read by running it through Lighthouse in devtools.
+
+    (screenshot)
+
+### Testing User Stories from User Experience (UX) Section
+
+- Casual/First-time Visitor Goals
+
+    i. As a Casual/First-time Visitor, I want to easily understand the main purpose of the site and learn more about the band.
+
+
+
+    ii. As a Casual/First-time Visitor, I want to be able to easily navigate through the site to find content.
+
+
+
+- Music Lover Goals
+
+    i. As a Music Lover, I want to be able to listen to the band's music so that I can decide whether or not to start following them.
+
+
+
+    ii. As a Music Lover, I want to find out what venues they play and what other bands they're associated with so that I can determine if I want to see them live.
+
+
+
+- Fan Goals
+
+    i. As a Fan of Ritual Effect, I want to find the latest news so that I can keep up to date with new releases, developments, etc.
+
+
+
+    ii. As a Fan of Ritual Effect, I want to find out about upcoming performances by the band so that I can see them live whenever possible.
+
+
+
+    iii. As a Fan of Ritual Effect, I want to find any and all sources of information regarding the band so that I can remain well informed about them.
+
+
+
+- Music Industry Goals
+
+    i. As a Music Industry Professional, I want to learn about the band's style and what they're like to work with.
+
+
+
+    ii. As a Music Industry Professional, I want to hear the band's music, read reviews and see them perform so that I can determine whether or not they're worth a closer look.
+
+
+
+    iii. As a Music Industry Professional, I want to locate the band's social media links so that I can see their followings on social media and determine how well-liked, respected and known they are.
+
+
+
+    iv. As a Music Industry Professional, I want to find out how to contact the band and their management so that I can arrange bookings, recordings, etc.
+
+    
+
+### Further Testing
+
+- Verify that this website works in various browsers: Chrome; Firefox; Safari; Microsoft Edge.
 
 - Confirm that this website is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar.
 
@@ -174,21 +329,7 @@ The site can be viewed [here](https://markhewitt76.github.io/ritual-effect/news.
 
 #### Unfixed Bugs
 
-### Validator Testing
 
-- HTML
-
-    Check no errors are returned when passing through the official [W3C validator](url).
-
-- CSS
-
-    Check no errors are returned when passing through the official [(Jigsaw) validator](url).
-
-- Accesiblity
-
-    Confirm that the website is accsessible and easy to read by running it through Lighthouse in devtools.
-
-    (screenshot)
 
 ## Deployment
 ---
