@@ -368,7 +368,8 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     When testing the website in different browsers, I noticed that the triangular,default marker on all `<summary>` elements was still showing up in Safari alone, despite the CSS property `list-style-type: none;` being applied. According to various searches, this is apparently because `list-style-type` isn't supported on the `<summary>` element in webkit-based browsers, although it seems to work on `<ul>` and `<li>` elements.
 
-    My search for a solution yielded some suggestions: on Stack Overflow, [here](https://stackoverflow.com/a/66814239); on github, [here](https://github.com/Fyrd/caniuse/issues/5869); and a 3rd on Stack Overflow, [here](https://stackoverflow.com/a/70834941). These led me to try out the following code, so far to no avail, though at the time of writing, I'm awaiting a family member's help with a final test.
+    My search for a solution yielded some suggestions: on Stack Overflow, [here](https://stackoverflow.com/a/66814239); on GitHub, [here](https://github.com/Fyrd/caniuse/issues/5869); and a 3rd on Stack Overflow, [here](https://stackoverflow.com/a/70834941). These led me to try out the following code, so far to no avail, though at the time of writing, I'm awaiting a family member's help with a final test.
+
 ```css
     summary::marker {
     display: none;
@@ -389,7 +390,10 @@ or
 
 ## Deployment
 ---
-The site is to be deployed to GitHub pages. The steps to deploy are as follows:
+
+### GitHub Pages
+
+The website was deployed to GitHub pages. The steps to deploy are as follows:
 
 - In the GitHub repository, navigate to the Settings tab
 - From the source section drop-down menu, select the Master Branch
@@ -397,16 +401,20 @@ The site is to be deployed to GitHub pages. The steps to deploy are as follows:
 
 The live link can be found [here](https://markhewitt76.github.io/ritual-effect/news.html).
 
+### Forking the GitHub Repository
+
+### Making a Local Clone
+
 ## Credits
 ---
 
-### Content
+### Code & Content
 
 - The code for the basic structure of the social media links in the footer, and of the signup form on the contact page, came from the Code Institute [Love Running](https://markhewitt76.github.io/love-running/index.html) project.
 
-- *responsive youtube video *
+- The solution to making an embedded YouTube video responsive while maintaining its aspect ratio, as used on the band's interview with Metalheads Forever Magazine, was to be found all over after a single google search, but the specific code used was posted to the [CSS-Tricks](https://css-tricks.com/fluid-width-video) website by Chris Coyier on March 11th, 2020.
 
-- *fieldset style structure of dates on news items & gig listings *
+- The code for the fieldset-style effect of the dates on news item & gig listings headlines on the News/Events page was posted to the [CSS-Tricks](https://css-tricks.com/snippets/css/non-form-fieldset-look/) website by Chris Coyier on July 9th, 2011 & updated on April 28th, 2020.
 
 - The basic CSS code for the hover effect of the submit button on the contacts page signup form came from Colt Steele's Udemy course, 'The Web Developer Bootcamp'. 
 
@@ -417,3 +425,11 @@ The live link can be found [here](https://markhewitt76.github.io/ritual-effect/n
 ### Media
 
 All images, audio files and video files are the property of Ritual Effect and were supplied by the band.
+
+### Acknowledegements
+
+- Moe Curtin and Ritual Effect for their permission and for providing content promptly when asked
+
+- My Mentor, Gerard McBride, for continuous helpful feedback.
+
+- My family and friends who helped with testing.
