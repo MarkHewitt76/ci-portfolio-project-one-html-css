@@ -70,7 +70,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
 
-    - The link to the page currently being displayed appears in uppercase with a double underline, allowing the user to tell at a galnce where they are on the site.
+    - The link to the page currently being displayed appears in uppercase with a double underline, allowing the user to tell at a glance where they are on the site.
 
     ![Inline navigation bar screenshot](/assets/images/screenshots/ritualeffect_navbar_inline_7.png "Inline navigation bar")
     ![Drop-down navigation menu screenshot](/assets/images/screenshots/ritualeffect_navbar_dropdown.png "Drop-down navigation menu")
@@ -126,7 +126,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
         - The Music Videos section includes the band's official videos for four songs from the Fossils album and a link to their YouTube channel
 
-        - The Home Videos section includes an embedded facebook video of the band in their rehearsal room and a link to their facebook video page. This section will be expanded to include directly playable home videos of the band, using the HTML video element, as they become available in appropriate file sizes.
+        - The Home Videos section includes an embedded facebook video of the band in their rehearsal room and a link to their facebook video page. This section will be expanded to include directly playable home videos of the band, using the HTML `<video>` element, as they become available in appropriate file sizes.
 
         - The Interviews section includes an embedded, scalable YouTube video of the band being interviewed by Metalheads Forever Magazine as well as links to the sites where this interview was featured. This section will be expanded as more interviews are recorded.
 
@@ -142,7 +142,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     - The sections are comprised of several news items and gig listings respectively, beginning with the most recent and each following the same format as detailed below:
 
-        - The Latest News section is a series of articles consisting of a fieldset-style date of publication over a headline. The body of each article is contained in an expandable disclosure widget which uses the HTML details and summary elements. They all include a story or synopsis, a related image or embedded video and an external link to the relevant website. 
+        - The Latest News section is a series of articles consisting of a fieldset-style date of publication over a headline. The body of each article is contained in an expandable disclosure widget which uses the HTML `<details>` and `<summary>` elements. They all include a story or synopsis, a related image or embedded video and an external link to the relevant website. 
 
         - The Gigs section is a series of listings consisting of a fieldset-style event date over a headline. The body of each listing is also contained in an expandable disclosure widget. They all include: the date, time, admission fee and a short description of each gig; the names and facebook links of each contributing artist; the name and facebook link of the venue; an image of the gig poster; a link to the relevant facebook event page.
 
@@ -228,7 +228,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
 - HTML
 
-    The official [W3C Markup Validation Service](https://validator.w3.org/) was used to validate every page of the site to ensure there were no syntax errors in the code. The only errors returned were from embed links copied and pasted from facebook and YouTube, trying to add text and/or aria labels to said links and, for some reason, the controlslist attribute in audio elements.
+    The official [W3C Markup Validation Service](https://validator.w3.org/) was used to validate every page of the site to ensure there were no syntax errors in the code. The only errors returned were from embed links copied and pasted from facebook and YouTube, trying to add text and/or aria labels to said links and, for some reason, the `controlslist` attribute in audio elements.
 
     Results:
     - [Home Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Findex.html)
@@ -343,10 +343,11 @@ This site is responsive on all device sizes and includes interactive elements, d
 
 ### Bugs
 
-#### Fixed Bugs
+#### Fixed Bug
+
 - #### Header navigation menu: sizing issue
 
-    I'm not sure if it qualifies as a bug, per se, but I noticed a sizing problem with the header on smaller screens, especially in landscape mode, when I first started to style it for responsive design. It encroached too far down onto the hero image, obscuring it, even after downsizing, but if I made the navigation menu any smaller it became difficult to see. I also wanted to avoid reducing the size of the band logo at all, if possible.
+    I noticed a sizing problem with the header on smaller screens, especially in landscape mode, when I first started to style it for responsive design. It encroached too far down onto the hero image, obscuring it, even after downsizing, but if I made the navigation menu any smaller it became difficult to see. I also wanted to avoid reducing the size of the band logo at all, if possible.
 
     I realised that I could solve the issue by switching the original, inline-styled navigation menu for a 'hamburger' style drop-down menu on medium to small screen sizes. I achieved this by first wrapping the original #main-menu list in a div with an id of "main-menu-inline". I then created the drop-down menu inside the same `<nav>` element in HTML by using the `<details>` element with a Font Awesome 'hamburger' icon in the `<summary>` tag, and copied the original navigation menu list into the disclosure widget. I gave it an id of "main-menu-dropdown", styled it to look like a standard drop-down menu and set the media queries to switch between the two menu styles at 800 pixels using the property `display: none;`. The media queries can be seen below.
 ```css
@@ -361,14 +362,30 @@ This site is responsive on all device sizes and includes interactive elements, d
         }
     }
 ```
-- #### Forced to reset after 6 commits as large video file prevented push
+#### Unfixed Bug
 
-30th Jan
+- #### `<summary>` element marker showing in Safari
 
+    When testing the website in different browsers, I noticed that the triangular,default marker on all `<summary>` elements was still showing up in Safari alone, despite the CSS property `list-style-type: none;` being applied. According to various searches, this is apparently because `list-style-type` isn't supported on the `<summary>` element in webkit-based browsers, although it seems to work on `<ul>` and `<li>` elements.
 
-#### Unfixed Bugs
-
-
+    My search for a solution yielded some suggestions: on Stack Overflow, [here](https://stackoverflow.com/a/66814239); on github, [here](https://github.com/Fyrd/caniuse/issues/5869); and a 3rd on Stack Overflow, [here](https://stackoverflow.com/a/70834941). These led me to try out the following code, so far to no avail, though at the time of writing, I'm awaiting a family member's help with a final test.
+```css
+    summary::marker {
+    display: none;
+  }
+```
+or
+```css
+    summary::marker {
+    content: none;
+  }
+```
+or
+```css
+    summary::marker {
+    content: "";
+  }
+```
 
 ## Deployment
 ---
