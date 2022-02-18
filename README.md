@@ -11,19 +11,19 @@ The site can be viewed [here](https://markhewitt76.github.io/ritual-effect/news.
 
 ### User Stories
 
-- Casual/First-time Visitor Goals
+- #### Casual/First-time Visitor Goals
 
     i. As a Casual/First-time Visitor, I want to easily understand the main purpose of the site and learn more about the band.
 
     ii. As a Casual/First-time Visitor, I want to be able to easily navigate through the site to find content.
 
-- Music Lover Goals
+- #### Music Lover Goals
 
     i. As a Music Lover, I want to be able to listen to the band's music so that I can decide whether or not to start following them.
 
     ii. As a Music Lover, I want to find out what venues they play and what other bands they're associated with so that I can determine if I want to see them live.
 
-- Fan Goals
+- #### Fan Goals
 
     i. As a Fan of Ritual Effect, I want to find the latest news so that I can keep up to date with new releases, developments, etc.
 
@@ -31,7 +31,7 @@ The site can be viewed [here](https://markhewitt76.github.io/ritual-effect/news.
 
     iii. As a Fan of Ritual Effect, I want to find any and all sources of information regarding the band so that I can remain well informed about them.
 
-- Music Industry Goals
+- #### Music Industry Goals
 
     i. As a Music Industry Professional, I want to hear the band's music, read reviews and see them perform so that I can learn about the band's style and what they're like to work with.
 
@@ -41,15 +41,15 @@ The site can be viewed [here](https://markhewitt76.github.io/ritual-effect/news.
 
 ### Design
 
-- Colour Scheme
+- #### Colour Scheme
     
     Primarily white on black with shades of grey.
 
-- Typography
+- #### Typography
 
     The main fonts used throughout the site are 'Tillana' and 'Skranji', with Sans Serif as the fallback font in case, for any reason, these fonts aren't being imported into the site correctly. Both were chosen for how they resemble and complement the lettering style of the Ritual Effect logo.
 
-- Imagery
+- #### Imagery
 
     The general colour scheme is complemented and enhanced by the use of both black-and-white and colour images. The large background and banner images were carefully selected to be striking and catch the user's attention. All imagery on the site was chosen to portray Ritual Effect's exuberant, energetic and flamboyant nature, both on and off stage.
 
@@ -60,7 +60,7 @@ The site can be viewed [here](https://markhewitt76.github.io/ritual-effect/news.
 
 This site is responsive on all device sizes and includes interactive elements, detailed below.
 
-- Navigation Bar
+- #### Navigation Bar
 
     - Featured on all pages across the site, the navigation bar includes the Logo and links to the Home page, Band page, Music page, Videos page, News/Events page, Gallery and Contact page. It is fixed to the top and is identical in each page to allow for easy navigation. The logo also serves as a link to the Home page.
 
@@ -74,13 +74,13 @@ This site is responsive on all device sizes and includes interactive elements, d
     ![Drop-down navigation menu screenshot](/assets/images/screenshots/ritualeffect_navbar_dropdown.png "Drop-down navigation menu")
     ![Drop-down navigation menu open screenshot](/assets/images/screenshots/ritualeffect_navbar_dropdown_1.png "Drop-down navigation menu open")
 
-- Landing Page Image
+- #### Landing Page Image
 
     - The landing, as seen in the introductory section of this README, includes a full-page, eye-catching photograph of the band posing flamboyantly outside Sin-É, a well-known Dublin music venue.
     
     - This immediately introduces the user to the band's outgoing, eccentric nature.
 
-- Call to Action
+- #### Call to Action
 
     - The landing image is overlaid with a call to action linking to the music page and containing album art and icons providing visual information on where the link leads.
 
@@ -88,7 +88,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     ![Call to action screenshot](/assets/images/screenshots/ritualeffect_calltoaction.png "Call to action")
 
-- Footer
+- #### Footer
 
     - The footer section, also featured on all pages across the site, includes links to the relevant streaming and social media sites for Ritual Effect. The links will open in a new tab to allow easy navigation for the user. It also includes a copyright statement.
 
@@ -96,7 +96,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     ![Footer screenshot](/assets/images/screenshots/ritualeffect_footer.png "Footer")
 
-- Band Page
+- #### Band Page
 
     - The Band page consists of an official press release about Ritual Effect and its members, including images of them performing live. There are links at the bottom to the Contact page and back to the top of the page, and links to the Music page in the article itself.
 
@@ -104,7 +104,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     ![Band page screenshot](/assets/images/screenshots/ritualeffect_bandpage_responsive.png "Band page")
 
-- Music Page
+- #### Music Page
 
     - The Music page showcases the band's releases to date: their current album, Fossils and their upcoming mini-album, Too Late to Turn Back.
 
@@ -118,7 +118,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     ![Music page screenshot](/assets/images/screenshots/ritualeffect_musicpage_responsive.png "Music page")
 
-- Videos Page
+- #### Videos Page
 
     - The Videos page is comprised of embedded YouTube and facebook videos, divided into three sections: Music Videos, Home Videos and Interviews. 
 
@@ -134,7 +134,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     ![Videos page screenshot](/assets/images/screenshots/ritualeffect_videopage_responsive.png "Videos page")
 
-- News/Events Page
+- #### News/Events Page
 
     - The News/Events page has a heading with links to two main sections: Latest News and Gigs. The page is divided by banner images and sub-headings for each section.
 
@@ -152,7 +152,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     ![News and Events page screenshot](/assets/images/screenshots/ritualeffect_newspage_responsive.png "News/Events page")
 
-- Gallery Page
+- #### Gallery Page
 
     - The gallery page has a heading with links to three main sections: Gig Pics, The Band and Backstage.
 
@@ -170,7 +170,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     ![Gallery page screenshot](/assets/images/screenshots/ritualeffect_gallerypage_responsive.png "Gallery page")
 
-- Contacts Page
+- #### Contacts Page
 
     - The Contacts page will allow the user to sign up for the Ritual Effect email newsletter and to find contact information for both the band's management and the band themselves. It includes email and social media links for both.
 
@@ -224,11 +224,11 @@ This site is responsive on all device sizes and includes interactive elements, d
 
 ### Validator Testing
 
-- HTML
+- #### HTML
 
     The official [W3C Markup Validation Service](https://validator.w3.org/) was used to validate every page of the site to ensure there were no syntax errors in the code. Among the errors returned were those from imported links copied and pasted from facebook and YouTube, such as embedded videos. These were ignored. For more, see below.
 
-    Debugging:
+    #### Debugging:
 
     - #### Warning: Article/Section lacks heading. Consider using `h2`-`h6` elements to [add identifying headings to all sections](https://www.w3.org/wiki/HTML/Usage/Headings/Missing).
 
@@ -242,7 +242,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
         - Solution: When embedding YouTube and facebook videos, I mistakenly added fallback text and alternate links between the opening and closing tags, as is done with the `<audio>` and `<video>` elements, forgetting that such content is not permitted in the `<iframe>` element. I simply removed the content.
 
-    Results:
+    #### Results:
 
     - [Home Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Findex.html)
 
@@ -260,11 +260,11 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     - [Disclaimer Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fdummy.html)
 
-- CSS
+- #### CSS
 
     The official [W3C CSS (Jigsaw) Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate [style.css](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) and no errors were returned.
 
-- Accessiblity
+- #### Accessiblity
 
     Every page was run through Lighthouse in devtools in order to confirm that the website is accsessible and easy to read.
 
