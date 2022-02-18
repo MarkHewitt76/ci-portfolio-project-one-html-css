@@ -122,7 +122,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     - The Videos page is comprised of embedded YouTube and facebook videos, divided into three sections: Music Videos, Home Videos and Interviews. 
 
-        - The Music Videos section includes the band's official videos for four songs from the Fossils album and a link to their YouTube channel
+        - The Music Videos section includes the band's official videos for four songs from the Fossils album and a link to their YouTube channel.
 
         - The Home Videos section includes an embedded facebook video of the band in their rehearsal room and a link to their facebook video page. This section will be expanded to include directly playable home videos of the band, using the HTML `<video>` element, as they become available in appropriate file sizes.
 
@@ -146,7 +146,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
         - All external links open in a new tab for ease of navigation.
 
-    - Both sections are followed by a link back to the top of the page
+    - Both sections are followed by a link back to the top of the page.
 
     - This page will be updated regularly. It is valuable to any user that wants to be kept up to date on what's happening with the band and/or where to see them perform live.
 
@@ -226,16 +226,38 @@ This site is responsive on all device sizes and includes interactive elements, d
 
 - HTML
 
-    The official [W3C Markup Validation Service](https://validator.w3.org/) was used to validate every page of the site to ensure there were no syntax errors in the code. The only errors returned were from embed links copied and pasted from facebook and YouTube, trying to add text and/or aria labels to said links and, for some reason, the `controlslist` attribute in `<audio>` elements even though it worked to remove the 'download' option from the elements' menu.
+    The official [W3C Markup Validation Service](https://validator.w3.org/) was used to validate every page of the site to ensure there were no syntax errors in the code. Among the errors returned were those from imported links copied and pasted from facebook and YouTube, such as embedded videos. These were ignored. For more, see below.
+
+    Debugging:
+
+    - #### Warning: Article/Section lacks heading. Consider using `h2`-`h6` elements to [add identifying headings to all sections](https://www.w3.org/wiki/HTML/Usage/Headings/Missing).
+
+        - Solution: Where necessary, I added a heading or replaced `<section>` with `<div>` in order to avoid this warning. In other cases, (i.e. the News/Events page and the signup form on the Contacts page), I believe I used `<article>` and `<section>` correctly as semantic elements to contain and describe distinct areas of a page, even though I felt a heading element was not warranted, and used `<div>` to handle block-level layout and structure otherwise. I therefore ignored the warning in those cases since it is a non-normative usage recommendation, as per the [HTML5 standard](http://www.w3.org/TR/2014/PR-html5-20140916/sections.html#the-section-element).
+    
+    - #### Error: Attribute `controlslist` not allowed on element [audio](https://html.spec.whatwg.org/multipage/#the-audio-element) at this point.
+
+        - Solution: Ignored. The `controlslist` attribute was used with the value `nodownload` to remove the download option from the menu on `<audio>` elements. The error is reported by the W3C validator because, although it works, this attribute is not included in the official HTML5 standard for the [audio](https://html.spec.whatwg.org/multipage/#the-audio-element) element "at this point" in time.
+
+    - #### Error: Text not allowed in element [iframe](https://html.spec.whatwg.org/multipage/#the-iframe-element) in this context.
+
+        - Solution: When embedding YouTube and facebook videos, I mistakenly added fallback text and alternate links between the opening and closing tags, as is done with the `<audio>` and `<video>` elements, forgetting that such content is not permitted in the `<iframe>` element. I simply removed the content.
 
     Results:
+
     - [Home Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Findex.html)
+
     - [Band Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fband.html)
+
     - [Music Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fmusic.html)
+
     - [Videos Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fvideo.html)
+
     - [News/Events Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fnews.html)
+
     - [Gallery Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fgallery.html)
+
     - [Contact Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fcontact.html)
+
     - [Disclaimer Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Fdummy.html)
 
 - CSS
@@ -257,9 +279,9 @@ This site is responsive on all device sizes and includes interactive elements, d
 
 ### Testing User Stories from User Experience (UX) Section
 
-- Casual/First-time Visitor Goals
+- #### Casual/First-time Visitor Goals
 
-    i. As a Casual/First-time Visitor, I want to easily understand the main purpose of the site and learn more about the band.
+    #### i. As a Casual/First-time Visitor, I want to easily understand the main purpose of the site and learn more about the band.
 
     - Immediately upon entering the site, the user is greeted with a clean and easily readable navigation bar or drop-down menu to get to the page of their choice. There is also a full-page hero image with a call to action overlay.
 
@@ -267,15 +289,15 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     - The user has a host of options from the navigation bar or menu by which to learn about the band, primarily by clicking the link to the Band page itself. 
 
-    ii. As a Casual/First-time Visitor, I want to be able to easily navigate through the site to find content.
+    #### ii. As a Casual/First-time Visitor, I want to be able to easily navigate through the site to find content.
 
     - The site has been designed to be fluid and never to entrap the user. At the top of each page and fixed to the top of the screen is a clean navigation bar or drop-down menu. Each link clearly describes what page the user will get to.
 
     - The longer pages have headings containing links to specific sections and/or periodic links that will take the user back to the top of the page.
 
-- Music Lover Goals
+- #### Music Lover Goals
 
-    i. As a Music Lover, I want to be able to listen to the band's music so that I can decide whether or not to start following them.
+    #### i. As a Music Lover, I want to be able to listen to the band's music so that I can decide whether or not to start following them.
 
     - The user has two options immediately upon entering the site: click the call to action overlay or the Music link in the navigation menu to be taken directly to the Music page.
 
@@ -283,7 +305,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     - The user can scroll to the bottom of any page on the site to find links in the footer to the band's profile on various streaming services. 
 
-    ii. As a Music Lover, I want to find out what venues they play and what other bands they're associated with so that I can determine if I want to see them live.
+    #### ii. As a Music Lover, I want to find out what venues they play and what other bands they're associated with so that I can determine if I want to see them live.
 
     - The user can find information about regular venues on the Band page. They can also see various venues that the band have performed at on the gallery page and in background and banner images throughout the site.
 
@@ -291,17 +313,17 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     - There are links to the band's social media pages in the footer, on the Contact page and throughout the site, where the user can see what other bands they're associated with via comments, 'following' details, event pages, etc. 
 
-- Fan Goals
+- #### Fan Goals
 
-    i. As a Fan of Ritual Effect, I want to find the latest news so that I can keep up to date with new releases, developments, etc.
+    #### i. As a Fan of Ritual Effect, I want to find the latest news so that I can keep up to date with new releases, developments, etc.
 
     - The Latest News section of the News/Events page provides the user with up to date information on all that's happening with Ritual Effect. Such information can also be found on the Music and Videos pages, as well as through the various links to the band's social media pages.
 
-    ii. As a Fan of Ritual Effect, I want to find out about upcoming performances by the band so that I can see them live whenever possible.
+    #### ii. As a Fan of Ritual Effect, I want to find out about upcoming performances by the band so that I can see them live whenever possible.
 
     - The Gigs section of the News/Events page contains all the latest information on upcoming performances. The user can also avail of the many social media links.
 
-    iii. As a Fan of Ritual Effect, I want to find any and all sources of information regarding the band so that I can remain well informed about them.
+    #### iii. As a Fan of Ritual Effect, I want to find any and all sources of information regarding the band so that I can remain well informed about them.
 
     - The user can find comprehensive information about Ritual Effect on the Band page.
 
@@ -311,9 +333,9 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     - The footer at the bottom of every page contains links which provide access to the virtual entirety of the band's online presence, not to mention the external links scattered throughout the site.
 
-- Music Industry Goals
+- #### Music Industry Goals
 
-    i. As a Music Industry Professional, I want to hear the band's music, read reviews and see them perform so that I can learn about the band's style and what they're like to work with.
+    #### i. As a Music Industry Professional, I want to hear the band's music, read reviews and see them perform so that I can learn about the band's style and what they're like to work with.
 
     - The user can read the official Ritual Effect press release on the Band Page.
 
@@ -321,11 +343,11 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     - The Music and Videos pages offer the user a window into the band's performance style and personality.  
 
-    ii. As a Music Industry Professional, I want to locate the band's social media links so that I can see their followings on social media and determine how well-liked, respected and known they are.
+    #### ii. As a Music Industry Professional, I want to locate the band's social media links so that I can see their followings on social media and determine how well-liked, respected and known they are.
 
     - The band's social media links are dotted throughout the site, most prominently on the Contact page and in the footer at the bottom of every page.
 
-    iii. As a Music Industry Professional, I want to find out how to contact the band and their management so that I can arrange bookings, recordings, etc.
+    #### iii. As a Music Industry Professional, I want to find out how to contact the band and their management so that I can arrange bookings, recordings, etc.
 
     - The user can find contact information for the band and their representatives, Split Screen Management, on the Contact page and in some of the articles on the News/Events page.
 
@@ -366,7 +388,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
     When testing the website in different browsers, I noticed that the triangular, default marker on all `<summary>` elements was still showing up in Safari alone, despite the CSS property `list-style-type: none;` being applied. According to various searches, this is apparently because `list-style-type` isn't supported on the `<summary>` element in webkit-based browsers, although it seems to work on `<ul>` and `<li>` elements.
 
-    My search for a solution yielded some suggestions: on Stack Overflow, [here](https://stackoverflow.com/a/66814239); on GitHub, [here](https://github.com/Fyrd/caniuse/issues/5869); and a 3rd on Stack Overflow, [here](https://stackoverflow.com/a/70834941). These led me to try out the following code, so far to no avail, though at the time of writing, I'm awaiting a family member's help with a final test.
+    My search for a solution yielded some suggestions: on Stack Overflow, [here](https://stackoverflow.com/a/66814239); on GitHub, [here](https://github.com/Fyrd/caniuse/issues/5869); and a 3rd on Stack Overflow, [here](https://stackoverflow.com/a/70834941). These led me to try out the following code to no avail.
 
 ```css
     summary::marker {
@@ -385,6 +407,13 @@ or
     content: "";
   }
 ```
+and finally
+```css
+summary::marker {
+    display: none;
+    content: none;
+  }
+```
 
 ## Deployment
 ---
@@ -393,9 +422,9 @@ or
 
 The website was deployed to GitHub pages. The steps to deploy are as follows:
 
-1. In the GitHub repository, navigate to the Settings tab
+1. In the GitHub repository, navigate to the Settings tab.
 
-2. From the source section drop-down menu, select the Master Branch
+2. From the source section drop-down menu, select the Master Branch.
 
 3. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
@@ -405,7 +434,7 @@ The live link can be found [here](https://markhewitt76.github.io/ritual-effect/n
 
 By forking the GitHub Repository you can make a copy of the original repository on your GitHub account to view and/or make changes, without affecting the original repository, by using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/MarkHewitt76/ritual-effect)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/MarkHewitt76/ritual-effect).
 
 2. At the top of the Repository, just above the "Settings" Button on the menu, click the "Fork" Button. 
 
@@ -419,7 +448,7 @@ By forking the GitHub Repository you can make a copy of the original repository 
 
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 
-4. Open Git Bash
+4. Open Git Bash.
 
 5. Change the current working directory to the location where you want the cloned directory to be made.
 
@@ -454,7 +483,7 @@ Click [here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Acknowledegements
 
-- Moe Curtin and Ritual Effect for their permission and for providing content promptly when asked
+- Moe Curtin and Ritual Effect for their permission and for providing content promptly when asked.
 
 - My Mentor, Gerard McBride, for continuous helpful feedback.
 
