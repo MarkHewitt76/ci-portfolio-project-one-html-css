@@ -454,7 +454,7 @@ By forking the GitHub Repository you can make a copy of the original repository 
 
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
-    e.g: `$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
+    e.g: `$ git clone https://github.com/MarkHewitt76/ritual-effect.git`
 
 7. Press Enter. Your local clone will be created.
 
