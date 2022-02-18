@@ -226,7 +226,7 @@ This site is responsive on all device sizes and includes interactive elements, d
 
 - HTML
 
-    The official [W3C Markup Validation Service](https://validator.w3.org/) was used to validate every page of the site to ensure there were no syntax errors in the code. The only errors returned were from embed links copied and pasted from facebook and YouTube, trying to add text and/or aria labels to said links and, for some reason, the `controlslist` attribute in audio elements.
+    The official [W3C Markup Validation Service](https://validator.w3.org/) was used to validate every page of the site to ensure there were no syntax errors in the code. The only errors returned were from embed links copied and pasted from facebook and YouTube, trying to add text and/or aria labels to said links and, for some reason, the `controlslist` attribute in `<audio>` elements even though it worked to remove the 'download' option from the elements' menu.
 
     Results:
     - [Home Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkhewitt76.github.io%2Fritual-effect%2Findex.html)
@@ -430,7 +430,6 @@ By forking the GitHub Repository you can make a copy of the original repository 
 7. Press Enter. Your local clone will be created.
 
 Click [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for a more detailed explanation of the process.
-
 
 ## Credits
 ---
